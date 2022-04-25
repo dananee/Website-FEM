@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html class="no-js" prefix="og: https://ogp.me/ns#" lang="fr">
+
+<!-- Mirrored from fem-desing.webnode.fr/documentation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Apr 2022 02:15:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><link rel="preconnect" href="https://d1di2lzuh97fh2.cloudfront.net/" crossorigin><meta charset="utf-8"><link rel="icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/2d/2di/2div3h.svg?ph=dc6c71fcd5" type="image/svg+xml" sizes="any"><link rel="icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/07/07f/07fzq8.svg?ph=dc6c71fcd5" type="image/svg+xml" sizes="16x16"><link rel="icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/1j/1j3/1j3767.ico?ph=dc6c71fcd5"><link rel="apple-touch-icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/1j/1j3/1j3767.ico?ph=dc6c71fcd5"><link rel="icon" href="https://d1di2lzuh97fh2.cloudfront.net/files/1j/1j3/1j3767.ico?ph=dc6c71fcd5">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Documentation :: Fem-Desing</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+	<meta name="msapplication-tap-highlight" content="no">
+	<link href="https://d1di2lzuh97fh2.cloudfront.net/files/2t/2tq/2tq99k.css?ph=dc6c71fcd5" rel="stylesheet">
+    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/2e/2eh/2ehok7.css?ph=dc6c71fcd5" media="screen and (min-width:37.5em)" rel="stylesheet" disabled>
+    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/26/264/2642gt.css?ph=dc6c71fcd5" rel="stylesheet">
+    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/1m/1m0/1m0irs.css?ph=dc6c71fcd5" media="screen and (min-width:37.5em)" rel="stylesheet" disabled>
+    <link href="https://d1di2lzuh97fh2.cloudfront.net/files/42/423/423zhq.css?ph=dc6c71fcd5" media="print" rel="stylesheet">
+	<link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/2h/2h8/2h81y2.css?ph=dc6c71fcd5" data-wnd_color_scheme_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/1e/1em/1em0yg.css?ph=dc6c71fcd5" data-wnd_color_scheme_desktop_file="" media="screen and (min-width:37.5em)" disabled=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/0w/0wn/0wnbwz.css?ph=dc6c71fcd5" data-wnd_additive_color_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/1w/1wn/1wnf20.css?ph=dc6c71fcd5" data-wnd_typography_file=""><link rel="stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/0b/0b7/0b71f9.css?ph=dc6c71fcd5" data-wnd_typography_desktop_file="" media="screen and (min-width:37.5em)" disabled=""><script>function loadDesktopCSS(){if(!desktopStylesLoaded&&window.innerWidth>=600){for(var e=0,d=document.querySelectorAll('head > link[href*="css"][media="screen and (min-width:37.5em)"]');e<d.length;e++)d[e].removeAttribute("disabled");desktopStylesLoaded=!0}}var desktopStylesLoaded=!1;loadDesktopCSS(),window.addEventListener("resize",loadDesktopCSS)</script>
+<link rel="preload stylesheet" href="https://d1di2lzuh97fh2.cloudfront.net/files/3u/3ut/3utx72.css?ph=dc6c71fcd5" as="style"><link rel="stylesheet" href="https://use.typekit.net/njp4uhl.css"><meta name="description" content="Ce chapitre résume les possibilités de documentation des projets, modèles et résultats de FEM-Design. Il introduit les fonctions d'impression et de listage (tableaux récapitulatifs) et la documentation automatique basée sur des modèles ( module Documentation )."><meta name="keywords" content=""><meta name="generator" content="Webnode 2"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no">
+
+<meta property="og:url" content="../../../documentation/documentation.html"><meta property="og:title" content="Documentation :: Fem-Desing"><meta property="og:type" content="article"><meta property="og:description" content="Ce chapitre résume les possibilités de documentation des projets, modèles et résultats de FEM-Design. Il introduit les fonctions d'impression et de listage (tableaux récapitulatifs) et la documentation automatique basée sur des modèles ( module Documentation )."><meta property="og:site_name" content="Fem-Desing"><meta property="og:image" content="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000282-a7910a7911/700/1-22.png?ph=dc6c71fcd5"><meta property="og:article:published_time" content="2022-04-13T00:00:00+0200"><meta name="robots" content="noindex,nofollow"><link rel="canonical" href="../../../documentation/documentation.html"><script>window.checkAndChangeSvgColor=function(c){try{var a=document.getElementById(c);if(a){c=[["border","borderColor"],["outline","outlineColor"],["color","color"]];for(var h,b,d,f=[],e=0,m=c.length;e<m;e++)if(h=window.getComputedStyle(a)[c[e][1]].replace(/\s/g,"").match(/^rgb[a]?\(([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})/i)){b="";for(var g=1;3>=g;g++)b+=("0"+parseInt(h[g],10).toString(16)).slice(-2);"0"===b.charAt(0)&&(d=parseInt(b.substr(0,2),16),d=Math.max(16,d),b=d.toString(16)+b.slice(-4));f.push(c[e][0]+"="+b)}if(f.length){var k=a.getAttribute("data-src"),l=k+(0>k.indexOf("?")?"?":"&")+f.join("&");a.src!=l&&(a.src=l,a.outerHTML=a.outerHTML)}}}catch(n){}};</script><script src="https://unpkg.com/web-vitals/dist/polyfill.js"></script></head>
+<body class="l layout short-content wt-page ac-h ac-i ac-o l-default l-d-border b-btn-sq b-btn-s-m b-btn-dn b-btn-bw-1 img-d-n img-t-u img-h-n line-solid b-e-ds lbox-d c-s-m hn-tbg wnd-free-bar-fixed  wnd-fe">
+	
+	<div class="wnd-page l-page cs-gray-3 ac-dblue t-btn-fw-l t-nav-fw-l t-pd-fw-l">
+		<div id="wrapper" class="l-w cf t-09">
+
+			<div class="l-bg cf">
+				<div class="s-bg-l">
+                    
+					
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+
+			<header class="l-h cf">
+				<div class="sw section-wrapper cf">
+	<div class="sw-c section-wrapper-content cf"><section class="s s-hn s-hn-default wnd-mt-classic wnd-na-c logo-classic sc-none   wnd-w-max wnd-nh-m hn-no-bg sc-m hm-claims menu-default">
+	<div class="s-w">
+		<div class="s-o">
+
+			<div class="s-bg">
+				<div class="s-bg-l">
+                    
+					
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+
+			<div class="h-w h-f wnd-fixed">
+
+				<div class="n-l initial-state">
+					<div class="s-c">
+						<div class="logo-block">
+							<div class="b b-l logo logo-default logo-nb exo2 logo-21 wnd-logo-with-text wnd-iar-1-1 b-ls-l" id="wnd_LogoBlock_464134142" data-wnd_mvc_type="wnd.fe.LogoBlock">
+	<div class="b-l-c logo-content">
+		<a class="b-l-link logo-link" href="https://fem-desing.webnode.fr/home/">
+
+			<div class="b-l-image logo-image">
+				<div class="b-l-image-w logo-image-cell">
+                    <picture><source type="image/jpg" srcset="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000001-9897598976/200/FEM-Design_Icon.png?ph=dc6c71fcd5" ><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000001-9897598976/200/FEM-Design_Icon.png?ph=dc6c71fcd5" class="wnd-logo-img" alt="" width="256" height="256" data-original-width="256" data-original-height="256" ></picture>
+				</div>
+			</div>
+
+			
+
+			<div class="b-l-br logo-br"></div>
+
+			<div class="b-l-text logo-text-wrapper">
+				<div class="b-l-text-w logo-text">
+					<span class="b-l-text-c logo-text-cell"><strong>FEM-Design</strong></span>
+				</div>
+			</div>
+
+		</a>
+	</div>
+</div>
+						</div>
+						<div class="cart-and-mobile">
+							
+
+                            
+
+							<div id="menu-mobile">
+								<a href="#" id="menu-submit"><span></span>Menu</a>
+							</div>
+						</div>
+
+						<div id="menu-slider">
+							<div id="menu-block">
+								<nav id="menu" data-align="centered" class="centered" data-type="sliding"><div class="menu-font menu-wrapper">
+	<a href="#" class="menu-close" rel="nofollow" title="Close Menu"></a>
+	<ul class="level-1">
+		<li class="wnd-homepage">
+			<a class="menu-item"
+				href="../../../index.html"><span
+					class="menu-item-text">Accueil</span></a>
+
+		</li>
+		<li class="wnd-active-path wnd-with-submenu">
+			<a class="menu-item"
+				href="../../../services/services.html"><span
+					class="menu-item-text">Modules de
+					Conception</span></a>
+			<ul class="level-2">
+				<li>
+					<a class="menu-item"
+						href="../../../sol3d/sol3d.html"><span
+							class="menu-item-text"> sol
+							3D</span></a>
+
+				</li>
+				<li>
+					<a class="menu-item"
+						href="../../../conception/conception.html"><span
+							class="menu-item-text">Conception
+							CLT</span></a>
+
+				</li>
+				<li>
+					<a class="menu-item"
+						href="../../../conception-composite/composite.html"><span
+							class="menu-item-text">Conception
+							composite</span></a>
+
+				</li>
+				<li class="wnd-active wnd-active-path">
+					<a class="menu-item"
+						href="../../../logiciel-de-conception/logiciel-de-conception.html"><span
+							class="menu-item-text">Conception
+							concrète</span></a>
+
+				</li>
+				<li class="wnd-active wnd-active-path">
+					<a class="menu-item"
+						href="../../../conception-de-la-fondation/foundation.html"><span
+							class="menu-item-text">Conception
+							de la fondation</span></a>
+
+				</li>
+				<li class="wnd-active wnd-active-path">
+					<a class="menu-item"
+						href="../../../conception-de-maconnerie/maconnerie.html">
+						<span"><span
+								class="menu-item-text">Conception
+								de maçonnerie</span>
+					</a>
+				<li>
+					<a class="menu-item"
+						href="../../../conception-en-acier/acier.html"><span
+							class="menu-item-text">Conception
+							en acier</span></a>
+
+				</li>
+				<li>
+					<a class="menu-item"
+						href="../../../conception-en-acier/acier.html"><span
+							class="menu-item-text">Joint en
+							acier</span></a>
+
+				</li>
+
+		</li>
+		<li>
+			<a class="menu-item"
+				href="../../../conception-en-bois/bois.html"><span
+					class="menu-item-text">Conception en
+					bois</span></a>
+
+		</li>
+	</ul>
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../telecharger/telecharger.html"><span
+				class="menu-item-text">Télécharger</span></a>
+
+	</li>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../commencer/commencer.html"><span
+				class="menu-item-text">Commencer-Fem
+				design</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../contact-us/contacter.html"><span
+				class="menu-item-text">Contact</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../concept-de-base-fem-design/base.html"><span
+				class="menu-item-text">Concepts de base -
+				Fem design</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../model-de-import-export/model.html"><span
+				class="menu-item-text">Modèle
+				d'import/export</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../definition-de-la-structure/structure.html"><span
+				class="menu-item-text">Définition de la
+				structure</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../charges/charge.html"><span
+				class="menu-item-text">Charges</span></a>
+
+	</li>
+	<li>
+		<a class="menu-item"
+			href="../../../verification-du-model/verification.html"></a>span
+				class="menu-item-text">Vérification du
+				modèle</span></a>
+
+	</li><li>
+			<a class="menu-item" href="../../../afficher-les-resultat/resultats.html"><span class="menu-item-text">Afficher les résultats</span></a>
+			
+		</li><li class="wnd-active wnd-active-path">
+			<a class="menu-item" href="../../../documentation/documentation.html"><span class="menu-item-text">Documentation</span></a>
+			
+		</li><li>
+			<a class="menu-item" href="../../../manuel-theorique/theorique.html"><span class="menu-item-text">Manuel théorique</span></a>
+			
+		</li>
+	</ul>
+	<span class="more-text">Plus</span>
+</div></nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section></div>
+</div>
+			</header>
+
+			<main class="l-m cf">
+				<div class="sw section-wrapper cf">
+	<div class="sw-c section-wrapper-content cf"><section class="s s-hm s-hm-claims cf sc-m wnd-background-image  wnd-w-default wnd-s-higher wnd-h-50 wnd-nh-m wnd-p-cc hn-no-bg hn-default">
+	<div class="s-w cf">
+		<div class="s-o cf">
+			<div class="s-bg">
+				<div class="s-bg-l wnd-background-image fx-none bgatt-scroll bgpos-center-center">
+                    <picture><img src="https://d1di2lzuh97fh2.cloudfront.net/files/0c/0cu/0cuf0u.jpg?ph=dc6c71fcd5" width="1920" height="898" alt="" ></picture>
+					
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+			<div class="h-c s-c">
+				<div class="h-c-b">
+					<div class="h-c-b-i">
+						<h1>
+							<div class="claim cf"><span class="sit b claim-default claim-nb exo2 claim-64">
+	<span class="sit-w"><span class="sit-c"><strong>Documentation</strong></span></span>
+</span></div>
+	                    </h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="s s-basic cf sc-w   wnd-w-default wnd-s-normal wnd-h-auto">
+	<div class="s-w cf">
+		<div class="s-o cf">
+			<div class="s-bg cf">
+				<div class="s-bg-l">
+                    
+					
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+			<div class="s-c cf">
+				<div class="content ez cf">
+	<div class="ez-c"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 class="wnd-align-center"><strong>Documentation</strong></h1>
+
+<p>Ce chapitre résume les possibilités de documentation des projets, modèles et résultats de FEM-Design. Il introduit les fonctions d'impression et de <em>listage</em> (tableaux récapitulatifs) et la documentation automatique basée sur des modèles ( <em>module Documentation</em> ).</p><h1><em>Impression&nbsp;</em></h1><div><p>&nbsp; &nbsp; &nbsp; Le contenu complet ou une partie de l'écran ( <em>Zone de dessin</em> ) peut être imprimé avec la commande <em>Tracer</em> ( menu <em>Fichier ). </em>Cliquez simplement avec   pour envoyer l'intégralité de l'écran à l'aperçu avant impression, ou définissez une zone de sélection avec  pour définir son contenu comme entrée de traçage.</p></div>
+</div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:14.34%;margin-right:14.34%;" id="wnd_ImageBlock_57258">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:58.5%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000282-a7910a7911/200/1-22.png?ph=dc6c71fcd5" alt="" width="200" height="117" data-original-width="706" data-original-height="413" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les paramètres d'impression sont les suivants :</p><ul><li><strong>Style de dialogue des paramètres</strong><br>Avec les boutons <em>Dialogue</em> et <em>Aperçu</em> , vous pouvez basculer entre la boîte de dialogue et le mode plein écran des paramètres de traçage.</li><li><strong>Configuration de l'imprimante</strong><br>L'imprimante cible peut être choisie parmi les imprimantes et traceurs disponibles (installés ou en réseau). Le créateur de PDF (non inclus par défaut) peut également être défini ici pour enregistrer le contenu de l'écran au format PDF. Les paramètres de l'imprimante ou du PDF sont disponibles dans <em>Propriétés</em> .</li><li><strong>Mise en page</strong><br>La taille du papier et les marges ainsi que l'orientation du papier peuvent être définies ici dans une boîte de dialogue séparée. Une étiquette de titre peut être ajoutée à la zone d'impression. Cochez la case « <em>Étiquette d'information</em> » pour ajouter une étiquette de titre dans le coin inférieur droit de la zone d'impression. Définissez le numéro de page et définissez la taille du texte et la largeur de l'étiquette dans <em>Configuration</em> . L'étiquette contient un texte personnalisé défini par <em>Paramètres &gt; Titre</em> et un texte automatique tel que le nom du fichier et la date de modification.<br></li></ul></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:9.09%;margin-right:9.09%;" id="wnd_ImageBlock_1247">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:53.45%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000283-e8387e8388/200/2-5.png?ph=dc6c71fcd5" alt="" width="200" height="107" data-original-width="782" data-original-height="418" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:6.32%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_65395">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000284-d8a54d8a55/200/light-89.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:93.68%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Si vous souhaitez n'imprimer que le contenu du <em>titre</em> , placez-le sur la zone de dessin avec <em>Dessiner &gt; Tableau d'informations sur le titre</em> , ajoutez-le à la sélection de la zone d'impression et désactivez l' option <em>Étiquette d'information dans Mise en </em><em>page</em> .<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:9.45%;margin-right:9.45%;" id="wnd_ImageBlock_98574">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:57.98%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000285-a1c7fa1c80/200/3-6.png?ph=dc6c71fcd5" alt="" width="200" height="116" data-original-width="871" data-original-height="505" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><strong>Impression couleur</strong><br>Bascule entre l'impression en niveaux de gris et l'impression couleur (vue à l'écran).</li><li><strong>Simulation de</strong><br>plume Différentes valeurs de largeur de plume peuvent être attribuées aux couleurs lors de la <em>configuration</em> .</li><li><strong>Bordure d' impression La bordure</strong><br>rectangulaire ajustée aux marges du papier ( <em>Mise en page</em> ) peut être affichée et définie pour l'impression.</li><li><strong>Imprimer uniquement la zone sélectionnée</strong><br>Si cette case est cochée, seule la zone sélectionnée (en cas de sélection) sera imprimée sinon son environnement (tout le contenu de la zone de dessin).</li></ul></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:18.68%;margin-right:18.68%;" id="wnd_ImageBlock_66165">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:59.01%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000286-dab80dab81/200/4-64.png?ph=dc6c71fcd5" alt="" width="200" height="118" data-original-width="805" data-original-height="475" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>Échelle</strong><br>Définissez l'échelle d'impression manuellement ou sélectionnez-en une dans la liste. La bordure en pointillé marque les objets (taille de la sélection) à imprimer et aide à définir l'échelle. <em>L'option Ajuster l'échelle aux marges </em> définit la plus grande échelle de la zone d'impression sélectionnée en fonction du format du papier, des marges et de l'origine (voir plus loin). <em>L'option Ajuster la taille du texte à l'échelle</em> définit l'échelle des textes en fonction de l'échelle du dessin ( <em>1:?</em> ) ou conserve la taille d'origine du texte en cas de statut inactif.<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:9.65%;margin-right:9.65%;" id="wnd_ImageBlock_55928">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:57.58%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000287-ca80cca80d/200/5-6.png?ph=dc6c71fcd5" alt="" width="200" height="115" data-original-width="745" data-original-height="429" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>Origine</strong><br>La position de la zone d'impression sélectionnée peut être définie avec sa distance par rapport à l'origine. <em>Horizontal</em> définit la distance entre le coin inférieur gauche de la zone d'impression et la marge gauche et <em>Vertical</em> définit la distance entre le coin inférieur gauche de la zone d'impression et la marge inférieure. <em>Les boutons centraux</em> ajustent la zone d'impression au milieu de la zone de page délimitée par les marges. La zone d'impression peut également être déplacée avec la souris sur la page blanche symbolique.&nbsp;<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:10.99%;margin-right:10.99%;" id="wnd_ImageBlock_32871">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:57.12%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000289-0f36b0f36c/200/7-21.png?ph=dc6c71fcd5" alt="" width="200" height="114" data-original-width="681" data-original-height="389" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>Aperçu simple</strong><br>C'est généralement un problème de tracer de grands modèles ; définir la position finale des dessins sur le papier prend du temps. En activant l' <em>aperçu simple</em> , le programme affiche uniquement le cadre de la zone d'impression sélectionnée pour réduire le temps de génération du dessin lors du réglage de sa position ( <em>origine</em> ) et de son <em>échelle</em> .&nbsp;<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.07%;margin-right:13.07%;" id="wnd_ImageBlock_16351">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:49.21%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000290-3aab23aab3/200/9-4.png?ph=dc6c71fcd5" alt="" width="200" height="98" data-original-width="699" data-original-height="344" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><strong>Enregistrer par défaut</strong><br>Il enregistre les paramètres d'impression papier et couleur en tant que paramètres de traçage par défaut pour une utilisation ultérieure et les projets suivants.<br>Cliquez sur <em>Imprimer</em> pour lancer l'impression. Une petite boîte de dialogue apparaît, dans laquelle vous pouvez annuler/arrêter l'impression.</li></ul></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>Estimation de quantité</h1><p> Un simple clic sur <em>Estimation de la quantité</em> ( menu <em>Outils</em> ), et un processus rapide collecte tous les éléments structurels du projet en cours et répertorie leurs matériaux, identifiants, principaux paramètres géométriques (par exemple, profils/épaisseur), quantités, diamètre de ferraillage, etc.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.1%;margin-right:13.1%;" id="wnd_ImageBlock_36249">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:61.04%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000291-115eb115ec/200/10-4.png?ph=dc6c71fcd5" alt="" width="200" height="122" data-original-width="670" data-original-height="409" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.321%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_74426">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000292-6d0036d004/200/warning (1)-71.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.679%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les quantités d'armatures sont affichées après <em>la conception BA</em> uniquement.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_34497_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_34497">La catégorisation par priorités et le résumé par certaines propriétés sont également disponibles dans les tableaux d'estimation des quantités ( <em>Options</em> ).</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:16.35%;margin-right:16.35%;" id="wnd_ImageBlock_21642">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:58.07%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000293-994c1994c2/200/11-8.png?ph=dc6c71fcd5" alt="" width="200" height="116" data-original-width="570" data-original-height="331" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Le tableau actuellement affiché peut être joint à la  <em>documentation</em> en cliquant sur <em>Ajouter à la documentation</em> .</p><p>Les résultats de l'estimation des quantités peuvent être imprimés directement sous forme de tableaux avec l' option <em>Liste . </em>(D'autres tableaux récapitulatifs tels que la structure, la charge, les entrées d'éléments finis et les résultats d'analyse/conception du projet en cours peuvent également être répertoriés ici. Vous pouvez également utiliser la commande   <em>Liste</em> du menu <em>Outils à tout moment.)</em></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:24.18%;margin-right:24.18%;" id="wnd_ImageBlock_91793">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.46%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000294-dceeddceee/200/12-5.png?ph=dc6c71fcd5" alt="" width="200" height="183" data-original-width="445" data-original-height="407" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 id="wnd_TextBlock_75270_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_75270">Référencement</h1><p id="wnd_TextBlock_75270_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_75270">Tous les tableaux de données d'entrée et de sortie peuvent être collectés et imprimés.</p><p id="wnd_TextBlock_75270_inner_2" data-wnd_is_separable="1" data-wnd_separable_index="2" data-wnd_separable_id="wnd_TextBlock_75270">Après avoir lancé la  commande Liste, l'utilisateur peut sélectionner les <strong>objets requis</strong> - à l'aide du filtre et/ou des méthodes de sélection graphique courantes - avant que la boîte de dialogue Liste des tables n'apparaisse. Toute la base de données peut être répertoriée en appuyant sur le  bouton . La sélection peut également être effectuée dans la boîte de dialogue Liste des tables à l'aide du menu déroulant dans le coin supérieur droit. L'Utilisateur peut choisir entre :</p><ul id="wnd_TextBlock_75270_inner_3" data-wnd_is_separable="1" data-wnd_separable_index="3" data-wnd_separable_id="wnd_TextBlock_75270"><li>All (tous les objets du modèle),</li><li>Sélection courante (objets sélectionnés avant l'apparition des tables Liste ; cette option n'est pas disponible lorsque tous les objets ont été sélectionnés (par la touche Entrée) après le lancement de la commande Liste),</li><li>Objets visibles (objets visibles dans la fenêtre Application),</li><li>Filtre défini par l'utilisateur (objets appartenant à des filtres prédéfinis).</li></ul><p id="wnd_TextBlock_75270_inner_4" data-wnd_is_separable="1" data-wnd_separable_index="4" data-wnd_separable_id="wnd_TextBlock_75270">Les données répertoriées dépendent des objets sélectionnés. En cochant la case 'Masquer les tables non pertinentes', les tables qui ne sont pas pertinentes pour la sélection actuelle disparaissent (sinon elles sont affichées en gris).</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:8.73%;margin-right:8.73%;" id="wnd_ImageBlock_4683">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:102.1%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000295-1343813439/200/13-2.png?ph=dc6c71fcd5" alt="" width="196" height="200" data-original-width="666" data-original-height="680" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong><em>Formater le tableau...</em></strong> : les paramètres du tableau peuvent être définis pour tous les modes d'exportation dans Formater le tableau... :<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:5.72%;margin-right:5.72%;" id="wnd_ImageBlock_38843">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:44.35%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000296-cc372cc373/200/14-0.png?ph=dc6c71fcd5" alt="" width="200" height="89" data-original-width="708" data-original-height="314" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul id="wnd_TextBlock_17287_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_17287"><li>Les propriétés suivantes peuvent être définies :<ul><li>un style de texte commun (type et taille de police) pour les titres, le texte et les valeurs des tableaux ;</li><li>l'unité des valeurs par type d'élément ( <em>Longueur</em> , <em>Force</em> , <em>Déplacement</em> etc.) ;</li><li>la largeur de colonne qui peut être définie par l'option Largeur ou en étirant le côté droit de la colonne sélectionnée avec la souris ;</li><li>nombre décimal de données numériques ; et</li><li>forme scientifique des données numériques.</li></ul></li><li>Dans <strong><em>Options</em></strong> (selon le type de données), les points de calcul (nœuds) peuvent être définis là où vous souhaitez demander et répertorier les valeurs (résultats).</li><li><em>Paramètres&gt;</em> stocke les paramètres de la liste actuelle en tant que paramètres par défaut pour une utilisation ultérieure et les projets suivants ou les paramètres par défaut précédemment enregistrés peuvent être chargés.</li><li>Avec l'option <em>Ajouter au lot , les données sélectionnées peuvent être ajoutées à la </em><em>liste des lots</em> (voir plus loin).</li></ul><p id="wnd_TextBlock_17287_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_17287">Dans le menu déroulant « Envoyer vers... », la destination des tables répertoriées peut être définie. Ce sont les suivants :</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:10.82%;margin-right:10.82%;" id="wnd_ImageBlock_51307">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:72.17%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000297-c0550c0551/200/15-8.png?ph=dc6c71fcd5" alt="" width="200" height="144" data-original-width="539" data-original-height="389" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><strong>Presse-papiers</strong><br>Cliquer sur <em>les données de la liste</em> envoie le tableau de l'élément sélectionné au Presse- <em>papiers Microsoft Office</em> , ce qui vous permet de copier le tableau et les éléments de texte de FEM-Design et de les coller dans un autre document tel que Microsoft Excel, Word, etc.</li><li><strong>Imprimante</strong> <em>Les données de la liste</em> envoient le tableau de données sélectionné directement à l'imprimante en fonction de la <em>configuration de la </em><em>page</em> et de l'imprimante . <em>La mise en page</em> offre les mêmes possibilités que celles mentionnées dans <em>Impression</em> . <br></li><li><strong>Documentation</strong> (les tableaux listés apparaissent dans la documentation),</li><li><strong>Fichier Excel</strong> (les tableaux listés peuvent être exportés vers un fichier Excel)</li></ul></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:30.27%;margin-right:30.27%;" id="wnd_ImageBlock_32692">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:39.09%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000298-c99efc99f0/200/16-29.png?ph=dc6c71fcd5" alt="" width="200" height="78" data-original-width="394" data-original-height="154" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Dans la boîte de dialogue Liste vers Excel, outre le chemin du fichier, un chemin de modèle peut également être défini si l'utilisateur dispose d'un modèle Excel prédéfini (avec l'extension .xltx, .xlt ou .xltm). Le fichier Excel créé peut être ouvert immédiatement en cochant la case "Ouvrir le fichier dans Excel".</p><ul><li>Liste sans fichier modèle : crée un fichier Excel dans lequel tous les tableaux sont situés sur des feuilles de calcul distinctes.</li><li>Listing avec un fichier modèle : l'Utilisateur peut créer un modèle dans lequel les emplacements des tableaux requis dans la feuille de calcul sont marqués par '$$' suivi du titre exact du tableau. L'utilisation d'un modèle permet à l'utilisateur d'obtenir exactement les données requises.</li></ul><p>Fichier modèle :</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:17.98%;margin-right:17.98%;" id="wnd_ImageBlock_80670">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:66.48%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000299-8939889399/200/17-0.png?ph=dc6c71fcd5" alt="" width="200" height="133" data-original-width="528" data-original-height="351" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_68012_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_68012">Fichier exporté basé sur un modèle :</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:19.55%;margin-right:19.55%;" id="wnd_ImageBlock_12012">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:48.73%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000300-b958eb958f/200/18-6.png?ph=dc6c71fcd5" alt="" width="200" height="97" data-original-width="630" data-original-height="307" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:8.413%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_90276">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000301-59a9e59a9f/200/light-30.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:91.587%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Après avoir répertorié dans Excel sans aucun modèle et examiné le nombre de colonnes appartenant à un tableau, il est plus facile de créer un modèle.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.412%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_75134">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000302-03b5f03b60/200/light-2.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.588%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>2 fichiers batch + 2 templates sont livrés avec le programme (FDSteelFrame, FDRCStruct).<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_46789_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_46789">Pour éviter la procédure fastidieuse de sélection des tables à lister une par une , <strong>Batch </strong> est implémenté pour les tables qui peuvent être sauvegardées et rechargées, même dans des modèles différents. De cette façon, toutes les tables requises peuvent être répertoriées en quelques clics. Des tableaux peuvent être ajoutés au <strong>lot</strong> en sélectionnant les tableaux dans la fenêtre « Données » et en cliquant sur le bouton <em>Ajouter au lot</em> .</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:15.09%;margin-right:15.09%;" id="wnd_ImageBlock_68968">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:74%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000303-8b4a88b4a9/200/20-7.png?ph=dc6c71fcd5" alt="" width="200" height="148" data-original-width="573" data-original-height="424" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les options suivantes peuvent être effectuées avec le lot :</p><ul><li>Supprimer les tableaux (les données sélectionnées seront supprimées),</li><li>Enregistrer le lot (le lot peut être enregistré dans un fichier de script batch avec l'extension .bsc),</li><li>Charger le lot (les lots enregistrés peuvent être chargés et utilisés dans d'autres modèles ; les tableaux qui ne sont pas pertinents dans d'autres modèles sont affichés en gris),</li><li>Lister le lot (tous les tableaux de la fenêtre de lot seront répertoriés conformément aux paramètres des menus déroulants « Liste des objets... » et « Envoyer à... ».</li></ul><p>La fenêtre et les options du lot peuvent être masquées en cliquant sur le bouton <em>&lt;Masquer le lot</em> .</p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.594%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_97154">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000304-736fa736fb/200/light-01.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.406%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Dans la fenêtre de lot, plus de données peuvent être sélectionnées en maintenant   enfoncé ou à l'aide des  boutons&nbsp;<br></p></div>
+</div></div>
+</div></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.412%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_59069">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000305-61b5e61b5f/200/light-32.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.588%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Dans un lot listé, l'ordre des tables est le même que dans la fenêtre de lot. L'ordre des tables dans la fenêtre batch peut être réorganisé en   appuyant sur et en utilisant  .<br></p></div>
+</div></div>
+</div></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.594%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_96251">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000306-7e2a77e2a8/200/light-24.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.406%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Un fichier de commandes enregistré avec des cas de charge (ou des combinaisons de charge, une analyse de stabilité, etc.) peut être utilisé dans d'autres modèles lorsque les noms des cas de charge (ou des combinaisons de charge, une analyse de stabilité, etc.) sont les mêmes car l'identification est basée sur le nom. Si tous les cas de charge (ou combinaisons de charge, analyse de stabilité, etc.) sont sélectionnés dans la fenêtre batch et que le fichier batch est chargé dans un autre modèle, tous les cas de charge (ou combinaisons de charge, analyse de stabilité, etc.) de l'autre modèle seront pris en compte.&nbsp;<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 id="wnd_TextBlock_22269_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_22269">Module documentaire</h1><p id="wnd_TextBlock_22269_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_22269">Bien que les commandes <em>Plot</em> et <em>List</em> offrent des possibilités de données de rapport rapides, vous pouvez créer une documentation de plusieurs pages avec le module <em>Documentation . </em>Les titres, figures, textes, tableaux, images, en-têtes, pieds de page, table des matières, etc. peuvent être placés dans un style personnalisé dans la documentation complète. <em>Le module de documentation</em> peut être exécuté dans tous les modules FEM-Design (selon votre licence).</p><p id="wnd_TextBlock_22269_inner_2" data-wnd_is_separable="1" data-wnd_separable_index="2" data-wnd_separable_id="wnd_TextBlock_22269">Cliquez   pour entrer en mode <em>Documentation</em> .</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.45%;margin-right:13.45%;" id="wnd_ImageBlock_9826">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:41.23%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000307-609ac609ad/200/30-7.png?ph=dc6c71fcd5" alt="" width="200" height="82" data-original-width="764" data-original-height="315" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les chapitres suivants présentent les possibilités et les étapes proposées pour définir un ensemble complet de documentation de conception.</p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>Commandes principales</h1><p>Les commandes et leurs fonctions :</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:32.64%;margin-right:32.64%;" id="wnd_ImageBlock_52811">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:47.66%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000308-cffdacffdb/200/40-9.png?ph=dc6c71fcd5" alt="" width="200" height="95" data-original-width="342" data-original-height="163" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><strong>Section La</strong><br> <em>section</em> définit les parties de la documentation ayant différentes propriétés (= "sections") telles que la taille de la page, l'orientation, la taille des marges et l'imprimante associée. Définissez une section pour la page de garde avec une image couleur au format de page <em>A4</em> et avec une imprimante couleur associée, et une autre section pour les autres pages au format <em>A3</em> et avec une imprimante en niveaux de gris pour les textes et les figures avec des lignes noires. <br></li><li><p><strong>Cartouche</strong><br>Il s'agit d'une commande pour créer et enregistrer de nouvelles étiquettes, en-têtes, pieds de page et cadres, et pour insérer des modèles de titre stockés dans le document à partir de la bibliothèque de cartouches intégrée ou définie par l'utilisateur. Vous pouvez appliquer des outils de dessin et de texte automatique pour concevoir votre étiquette privée, votre titre et votre style de cadre, puis l'enregistrer avec la commande de   <em>bloc de titre </em> pour une utilisation actuelle et future.</p></li><li><p><strong>Table des matières</strong><br>Insère une table des matières dans le document courant. Il contient la liste des chapitres (voir la commande suivante) et leurs numéros de page. Si vous définissez un nouveau chapitre ou apportez des modifications, le programme actualise cette liste.</p></li><li><p><strong>Les titres de chapitre</strong><br>des chapitres principaux et des sous-chapitres peuvent être insérés dans le document avec les numéros et les noms des éléments.</p></li><li><p><strong>Saut</strong><br>de page La définition d'un saut de page génère une nouvelle page avec les mêmes propriétés que la section courante.</p></li><li><p><strong>Fenêtre graphique</strong><br>La commande permet d'insérer des fenêtres (de travail) dans lesquelles vous pouvez afficher différentes figures (géométrie, charges, maillage, résultats d'analyse et de conception, etc.) dans le document courant.</p></li></ul></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:10.779%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_605">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000309-0622a0622b/200/warning (1)-55.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:89.221%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><p>Un objet fenêtre défini par   <em>Fenêtre graphique</em> n'est pas une figure statique avec un contenu constant et fixe. Il s'agit d'une fenêtre de travail, où vous pouvez utiliser les systèmes de calques, les paramètres d'affichage et les commandes d'affichage (opérations de zoom et de rotation, vues planes, latérales et spatiales, modes d'affichage ombre et filaire, etc.) pour définir l'apparence requise du modèle, les charges, les appuis, les résultats, etc.</p></li></ul></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li><strong>Tableau</strong><br>Il insère des tableaux de données d'entrée et de sortie (par exemple la liste des cas de charge et des combinaisons de charge). La fonction et les paramètres du tableau sont similaires avec les possibilités de la commande <em>Liste</em> .</li><li><strong>Boîte</strong><br>de dessin L'outil insère une fenêtre de travail dans le document où vous pouvez créer votre propre dessin avec les commandes des menus <em>Dessin</em> et <em>Édition . </em>Le système de couches de dessin est également disponible dans une   <em>boîte de</em> dessin .</li><li><strong>Zone de texte</strong><br>C'est un traitement de texte simple pour créer des textes, des notes dans le document. La taille de la zone de texte, les styles de police et l'alignement du texte peuvent être définis manuellement.</li><li><strong>Image</strong><br>Des fichiers image (par exemple jpg, bmp etc.) peuvent être insérés dans le document avec cette commande.</li></ul></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:13.054%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_91778">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:385.33%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000310-c8f4cc8f4d/200/50-4.png?ph=dc6c71fcd5" alt="" width="52" height="200" data-original-width="150" data-original-height="578" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:86.946%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1><strong>Plan documentaire</strong></h1><p>La liste contient les boîtes de titre définies, les sections, les boîtes graphiques, les images, les dessins et les textes (ci-après appelés « objets »). Vous pouvez activer l'objet de liste sélectionné en double-cliquant sur son nom.</p><p>Afin d'accélérer le travail dans la documentation, les sections peuvent être masquées/affichées en cochant la case à côté du nom de la section.</p><p>Les sections masquées ne sont donc pas verrouillées, elles peuvent être coupées, copiées, collées, déplacées, supprimées ou modifiées. Si une section active est déplacée dans une section masquée, les deux sections seront masquées et vice versa.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image wnd-float-left img-s-n" style="margin-left:0;margin-right:0;float:left;clear:both;width:10.45%;" id="wnd_ImageBlock_97684">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000311-9dc639dc64/200/light-97.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Il est possible de sélectionner plusieurs sections à masquer en une seule fois. Décochez une case active, toutes les sections sélectionnées s'éteindront. Cochez-en un inactif, ils seront tous affichés.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h3><strong>La navigation</strong></h3><p>Vous pouvez naviguer entre les pages à l'aide des boutons   <em>Page up</em> , <em>Page down</em> , <em>Home </em> et <em>End . </em>Cliquer sur <em>Aller à permet de</em> passer à l'objet sélectionné dans la liste (équivaut à double-cliquer sur l'objet sélectionné dans la <em>Liste</em> ).</p><p>Les titres ajoutés aux éléments de documentation facilitent la navigation dans les zones de <em>texte</em> et les figures définies ( <em>Fenêtre graphique</em> , <em>Image</em> et <em>Zone de dessin</em> ).</p><h3><strong>Articles</strong></h3><p>Avec les outils <em>Couper</em> , <em>Copier</em> et <em>Coller</em> , vous pouvez modifier la position des éléments de liste sélectionnés (la multi-sélection fonctionne également en utilisant la souris avec   et/ou les   touches). Vous pouvez déplacer un objet de liste sélectionné dans une nouvelle position en maintenant la   touche enfoncée et en déplaçant la souris dans la ligne requise de la liste. Pour effacer un ou plusieurs objets sélectionnés, cliquez sur <em>Supprimer</em> . Avec <em>Propriétés</em> , les paramètres (tailles, styles, contenu, etc.) de l'objet sélectionné peuvent être modifiés. La variabilité des objets dépend du type d'objet (dessin, texte, image, coupe, etc.).</p><h3><strong>Document</strong></h3><p>Avec <em>Réinitialiser</em> , vous pouvez supprimer tout le contenu de la documentation actuelle et "ouvrir" un nouveau document vide avec les paramètres par défaut. Dans <em>Modèles</em> , vous pouvez enregistrer la structure et les paramètres actuels du document sous un nom en tant que modèle. Vous pouvez également en charger un prédéfini pour créer une documentation rapide de votre projet en cours (voir plus tard <em>Modèles</em> ). La commande <em>Imprimer</em> vous permet d'imprimer tout le document ou une partie de celui-ci. Avec le bouton <em>Enregistrer sous .docx </em> , toute la documentation peut être exportée vers un fichier Office OpenXML (.docx).</p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>Étapes pour créer votre propre documentation</h1><p>Ce chapitre présente les étapes proposées de création de document via un exemple simple (dans le module <em>Plate ).</em><br></p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:9.141%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_12623">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000312-3220c3220d/200/light-69.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:90.859%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Pour un processus de documentation plus rapide, nous vous recommandons de commencer la documentation après avoir terminé la génération du modèle et les calculs et non avant eux.&nbsp;<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>1- Titre du document</strong><br>Définissez les propriétés principales du document en sélectionnant <em>Sans titre</em> dans la liste et cliquez sur <em>Propriétés</em> sous <em>Eléments</em> . Donnez un nom à votre document (dans <em>Titre</em> ) et définissez les paramètres de police par ordre de chapitre (niveaux). Sous <em>Utilitaires</em> , vous pouvez enregistrer les paramètres par défaut ou en tant que style nommé, afin de pouvoir ensuite charger des styles pour de futurs projets.<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:21.64%;margin-right:21.64%;" id="wnd_ImageBlock_88430">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:79.55%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000313-f2bd5f2bd6/200/Screenshot_1-4.png?ph=dc6c71fcd5" alt="" width="200" height="159" data-original-width="533" data-original-height="424" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>2- Page de garde (</strong> Zone de texte et Image - Section 1. <strong>)</strong><br>Paramétrez les propriétés de la <em>Section 1.</em> en l'activant dans la liste et en cliquant sur <em>Propriétés</em> .<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:15.8%;margin-right:15.8%;" id="wnd_ImageBlock_50031">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:65.86%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000314-c10f6c10f7/200/70.png?ph=dc6c71fcd5" alt="" width="200" height="132" data-original-width="580" data-original-height="382" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ul><li>Définissez le format et l'orientation du papier (par exemple , <em>A4</em> et portrait).</li><li>Choisissez une imprimante pour la section en cours. Vous pouvez définir différentes imprimantes, traceurs et créateurs de PDF par section. Il est très courant que les parties de texte soient imprimées au format A4 et les figures, etc. au format A3, etc.</li><li>Définissez la marge à partir de laquelle les textes, figures, images, etc. commenceront. Par exemple, le titre principal commencera à 60 mm du haut de la page.<br>Écrivez le titre du document sur la première page avec Zone de   <em>texte</em> . Le texte commencera à partir de la marge supérieure.</li></ul></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:17.82%;margin-right:17.82%;" id="wnd_ImageBlock_38765">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:67.29%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000315-d8c84d8c85/200/80.png?ph=dc6c71fcd5" alt="" width="200" height="135" data-original-width="642" data-original-height="432" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Un sous-titre peut également être créé en réexécutant Zone   <em>de texte</em> .<br></p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:6.866%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_45419">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000316-2416024161/200/light-017.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:93.134%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les lignes vides et les nouvelles lignes peuvent être définies avec la combinaison de touches Ctrl <em>+ </em> Entrée .<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Placez un fichier image (par exemple une image du modèle) avec la commande   <em>Image</em> . Pour ouvrir un fichier image, recherchez-le dans l' option <em>&gt; du </em><em>nom de fichier</em> . Définissez la position de l'image à partir des marges latérales sur <em>Alignement</em> . Dans <em>Taille</em> , vous pouvez définir une taille arbitraire ou une taille spéciale ( <em>Largeur de page</em> / <em>Pleine page</em> ) en choisissant dans la liste sous <em>&gt;</em> symbole. Appliquez le <em>ratio</em> de préservation pour éviter que les chiffres ne soient déformés lors de la définition de la taille.<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:18.36%;margin-right:18.36%;" id="wnd_ImageBlock_69706">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:64.11%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000317-160c8160c9/200/90.png?ph=dc6c71fcd5" alt="" width="200" height="128" data-original-width="496" data-original-height="318" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.867%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_57398">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000318-c688ac688b/200/light-54.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.133%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ol><li><ul><li>Les paramètres d'un objet inséré (zone de texte, image, etc.) peuvent être modifiés en le sélectionnant dans la liste et en appuyant sur l' option <em>Propriétés . </em>Cela fonctionne de la même manière qu'avec la boîte de dialogue initiale de l'objet.</li></ul></li></ol></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>3- Table des matières (</strong> Section 2. <strong>)</strong><br>Créez une nouvelle section (laissez votre sélection sur le dernier élément (ici l'image)) avec   <em>Section</em> et définissez la valeur de la marge supérieure à partir de laquelle la table des matières commencera (par exemple 30 mm). Cliquez sur la commande   <em>Table des matières</em> et un « tableau » vide apparaît sur la page <em>Section 2</em> . Le tableau sera automatiquement rempli lors de la définition des <em>chapitres</em> .<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:28.82%;margin-right:28.82%;" id="wnd_ImageBlock_96618">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:35.92%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000319-9ba7c9ba7d/200/99.png?ph=dc6c71fcd5" alt="" width="200" height="72" data-original-width="426" data-original-height="153" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>4- En-tête et pied de page (</strong> Cartouche - Section 3. <strong>)</strong><br>Créez une nouvelle section (laissez votre sélection sur le dernier élément (ici "Table des matières")) avec   <em>Section</em> et définissez les valeurs de marge supérieure et inférieure qui définissent la zone disponible pour un texte supplémentaire, figures et tableaux (30 mm dans cet exemple). Utilisez les commandes du menu <em>Dessin pour préparer l'apparence (cadres et textes) des en-têtes et pieds de page. </em>Appliquer par exemple les commandes <em>Ligne</em> et <em>Champ</em> ( <em>Texte automatique</em> ).<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:22.14%;margin-right:22.14%;" id="wnd_ImageBlock_84296">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:57.42%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000320-47d1d47d1e/200/100.png?ph=dc6c71fcd5" alt="" width="200" height="115" data-original-width="573" data-original-height="329" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.594%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_87103">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000321-4b96b4b96c/200/light-34.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.406%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Où tu vois "?" symbole à un texte automatique, le contenu peut être défini dans <em>Paramètres </em> &gt; <em> Titre</em> .<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Une fois le dessin terminé, utilisez l' outil <em>Enregistrer du </em>  <em>bloc de titre</em> pour enregistrer votre "en-tête et pied de page" en tant que parties d'étiquette intégrées. Tapez un identifiant ("header&amp;footer" dans cet exemple) pour le titre dans le champ <em>Nom</em> , sélectionnez les lignes et les textes par sélection de fenêtre et donnez un point d'insertion (coin inférieur gauche de la page dans cet exemple).<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:21.95%;margin-right:21.95%;" id="wnd_ImageBlock_67885">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:60.82%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000322-ef057ef058/200/200.png?ph=dc6c71fcd5" alt="" width="200" height="122" data-original-width="633" data-original-height="385" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Après l'enregistrement, supprimez les dessins et le texte du document par <em>Effacer </em> ( menu <em>Edition ) !</em><br>Insérez le cartouche défini et enregistré dans le document avec l' outil <em>Insérer de </em>  <em>Cartouche</em> . Choisissez l'en-tête et le pied de page enregistrés dans le<em>Liste des noms</em> , puis placez le point d'insertion du cartouche sélectionné dans le coin inférieur gauche de la page. Par conséquent, l'en-tête et le pied de page seront répétés sur chaque page de la section actuelle ( <em>section 3.</em> ).<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:22.36%;margin-right:22.36%;" id="wnd_ImageBlock_69447">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:34.86%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000323-4aa4f4aa50/200/300.png?ph=dc6c71fcd5" alt="" width="200" height="70" data-original-width="568" data-original-height="198" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>5- Chapitres (</strong> Section 3. <strong>)</strong><br>Placez votre premier chapitre avec la commande   <em>Chapitre</em> . Donnez un nom dans le champ <em>Titre</em> pour le chapitre en cours ("Géométrie" dans cet exemple).<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:23.09%;margin-right:23.09%;" id="wnd_ImageBlock_5403">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:45.65%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000324-45da145da2/200/400.png?ph=dc6c71fcd5" alt="" width="200" height="91" data-original-width="552" data-original-height="252" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ol><li>Pour les chapitres suivants, le programme propose des systèmes de numérotation alternatifs pour le prochain chapitre principal (« 2 ») ou sous-chapitre (« 1.1 »). Cela dépend du bouton actif : <em>Augmenter le </em><em>retrait</em> ou <em>Diminuer le retrait</em> .</li><li><strong>6- Figures (</strong> Fenêtre graphique - Section 3. <strong>)</strong><br>Dans un chapitre, vous pouvez insérer du texte (voir <em>Zone de texte</em> ), des images (voir <em>Image</em> ) et des figures de la géométrie du modèle, des charges, des résultats, etc. Dans cet exemple, placez d'abord une figure sur la géométrie du modèle (plaques et supports). Cliquez sur   <em>Fenêtre graphique</em> , choisissez Type de <em>structure</em> et définissez les paramètres d'affichage de l'image dans la boîte de dialogue qui s'affiche. Vous pouvez donner un nom à la figure pour l'afficher ( <em>Titre d'affichage</em> , "Vue en plan"). Une "barre d'échelle de 1 m" peut être affichée à l'intérieur de la figure avec <em>Afficher l'échelle</em> . La taille de la fenêtre peut être définie avec une largeur et une hauteur ou en choisissant des tailles prédéfinies sous <em>&gt;</em>( <em>Largeur de page/Pleine page</em> ). La position de la figure souhaitée peut être définie en activant l'un des boutons d' <em>alignement</em> ("centre" dans cet exemple). La position du titre est la même que l' <em>alignement</em> activé de la fenêtre. Cliquer sur <em>OK</em> insère la nouvelle figure dans le document.</li></ol></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:19.5%;margin-right:19.5%;" id="wnd_ImageBlock_58125">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:47.07%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000325-c48f3c48f4/200/500.png?ph=dc6c71fcd5" alt="" width="200" height="94" data-original-width="631" data-original-height="297" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><br>D'autres fenêtres graphiques peuvent être définies en répétant l'étape précédente. Par exemple, placez une vue latérale de la structure, etc.<br>Cliquez sur la zone de la fenêtre pour l'activer en tant que fenêtre de travail, de sorte que vous pouvez modifier la vue et la position du contenu de la fenêtre. Le cadre épais noir montre quelle fenêtre graphique est active. </p><p>Par exemple, en cliquant sur la fenêtre graphique de type <em>Structure</em> , les paramètres d'affichage ( menu <em>Paramètres ), les commandes d'affichage (menu </em><em>Affichage</em> ) et le <em>système de couches</em> ( <em>Couche courante</em> ) peuvent être utilisés ; mais dans une fenêtre graphique de type <em>Analyse (résultat), vous pouvez parcourir les résultats ( </em><em>Nouveau résultat</em> et <em> Sélectionner résultat</em> ), en affichant des valeurs numériques ( <em>Valeur numérique</em> ).</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.18%;margin-right:13.18%;" id="wnd_ImageBlock_232">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:43.51%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000326-a74c4a74c5/200/600.png?ph=dc6c71fcd5" alt="" width="200" height="87" data-original-width="770" data-original-height="335" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:10.051%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_32477">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000327-de952de953/200/warning (1)-58.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:89.949%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Chaque fenêtre graphique a son propre système de couches, ses paramètres principaux et d'affichage. <em>FEM-Design</em> donne également la possibilité de définir différentes unités pour afficher la géométrie et divers résultats.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Cliquez sur le livre blanc (en dehors de la fenêtre graphique active) pour revenir à la documentation.<br></p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Répétez les étapes précédentes pour définir d'autres <em>chapitres</em> (2. Appuis, 3. Charges, 3.1 Cas de charge, 3.2 Combinaisons de charges, etc.) et pour placer de nouvelles figures (comme des charges avec une <em>fenêtre graphique de type Charges</em> ).<br></p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:7.594%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_79976">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000328-04ac104ac2/200/light-10.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:92.406%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Il n'est pas possible de définir des distances entre les textes, les lignes de titre de chapitre et les figures, mais avec la commande   <em>Zone de texte,</em> vous pouvez insérer des lignes vides entre les objets dans le document.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Une autre façon d'insérer des figures est que la vue du modèle actuel peut être placée sur la dernière page de la documentation avec la commande   <em>Ajouter une vue au document </em> ( menu <em>Outil ). </em>Bien entendu, les paramètres de la nouvelle fenêtre graphique pourront être modifiés ultérieurement avec l' outil <em>Propriétés de </em><em>Documentation</em> .<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.18%;margin-right:13.18%;" id="wnd_ImageBlock_69335">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:37.61%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000329-3ad813ad82/200/700.png?ph=dc6c71fcd5" alt="" width="200" height="75" data-original-width="771" data-original-height="290" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p><strong>7- Tableaux (</strong> Section 3. <strong>)</strong><br>Les données d'entrée et de sortie sous forme de tableaux peuvent être ajoutées au document avec la commande   <em>Tableau</em> . Les fonctions et les outils de <em>Table</em> sont les mêmes que ceux décrits dans <strong><em>List</em></strong> . Choisissez les données à imprimer sous forme de tableau dans les listes de <em>tableaux</em> , <em>de données</em> et de <em>résultats disponibles. </em>Dans cet exemple, placez un tableau récapitulatif des combinaisons de charges (sous le chapitre 3.2 : Combinaisons de charges). Sélectionnez d'abord <em>les combinaisons de charges</em> dans la liste de <em>données</em> ( <em>Tables/ Charges</em> ), puis définissez les paramètres de la table dans <em>Table</em> et <em>Options</em> , et enfin cliquez sur <em>Données de liste</em>. Par conséquent, le tableau sélectionné apparaît après l'objet de documentation actuel.&nbsp;<br></p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:15.82%;margin-right:15.82%;" id="wnd_ImageBlock_4607">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:60.96%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000330-7e7ab7e7ac/200/800.png?ph=dc6c71fcd5" alt="" width="200" height="122" data-original-width="689" data-original-height="420" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><ol><li><strong>8- Chiffres de résultat (</strong> Fenêtre graphique - Section 3. <strong>)</strong><br>Pour documenter les chiffres de résultat, utilisez <em>la fenêtre graphique </em> et sélectionnez <em>Analyse-</em> , Conception <em>BA-</em> , Conception <em>acier-</em> ou <em>Conception bois</em> (selon le type de calcul disponible et le résultat que vous souhaitez afficher). Après l'insertion, cliquez dans la fenêtre graphique et choisissez les types de résultats avec <em>Nouveau résultat</em> et/ou <em> Sélectionner résultat</em> .</li></ol></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>Modèles et documentation automatique</h1><p>La structure de la documentation (couverture, chapitres, texte et positions des fenêtres) définie dans le module <em>Documentation</em> peut être enregistrée sous un nom de fichier ( <em>.DSC</em> ) comme modèle pour d'autres projets. Cliquez sur <em>Modèles  </em><em>du Panneau de configuration</em> &gt; <em> Enregistrer en tant </em> qu'outil.</p><p>Le programme génère automatiquement votre documentation complète, si vous appliquez un modèle préalablement défini ou intégré. Utilisez <em>Modèles </em> &gt; <em> Appliquer</em> lorsque vous entrez en mode <em>Documentation</em> après avoir modélisé et calculé un nouveau projet, et le programme génère automatiquement une documentation complète en actualisant en fonction du modèle appliqué (il met à jour le titre, la table des matières, les numéros de page, les figures et les tableaux, etc. du modèle).</p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:8.504%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_56310">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000331-1457114572/200/warning (1)-8.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:91.496%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Une image insérée par <em>Image</em>  est supprimée dans un nouveau modèle !<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Si vous chargez un modèle dans un document n'ayant pas de résultats calculés, les fenêtres graphiques de type <em>Analyse</em> , <em>Conception</em> BA ou <em>Conception acier</em> ne contiennent que la structure, mais elles seront actualisées à chaque fois que vous aurez des calculs.</p><p>Les <em>Templates</em> peuvent être ajoutés dans la commande Documentation by <em>Templates &gt;/Append...</em> . Les éléments des modèles ajoutés seront insérés après le dernier élément de document existant.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:23.5%;margin-right:23.5%;" id="wnd_ImageBlock_50779">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:39.59%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000332-7fc7d7fc7e/200/900.png?ph=dc6c71fcd5" alt="" width="200" height="79" data-original-width="543" data-original-height="215" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Si un modèle appliqué génère une documentation avec des <em>tables</em> n'ayant pas de valeurs valides, les tables vides peuvent être masquées. Sélectionnez le titre du document (première ligne) dans le <em>Panneau de configuration</em> , puis cliquez sur <em>Propriétés</em> et désactivez l'option « <em>Afficher les tableaux vides</em> » dans la boîte de dialogue qui s'affiche.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:28.27%;margin-right:28.27%;" id="wnd_ImageBlock_7190">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:64.38%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000333-791e0791e1/200/1000.png?ph=dc6c71fcd5" alt="" width="200" height="129" data-original-width="438" data-original-height="282" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>La documentation peut être exportée vers Office OpenXML (docx). Pour plus d'informations, consultez le lien suivant : https://download.strusoft.com/FEM-Design/inst150x/savetodocxfaq.pdf</p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 id="wnd_TextBlock_42873_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_42873">Impression</h1><p id="wnd_TextBlock_42873_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_42873">Le document terminé ou seulement certaines parties de celui-ci peuvent être imprimés avec l' outil <em>Imprimer </em><em>du Panneau de configuration ou </em><em>Fichier &gt; Imprimer le document</em> .</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:30.73%;margin-right:30.73%;" id="wnd_ImageBlock_48150">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:58.31%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000334-275b9275ba/200/2000.png?ph=dc6c71fcd5" alt="" width="200" height="117" data-original-width="319" data-original-height="186" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Définissez la <em>plage</em> de pages sur :</p><ul><li><strong>Tout</strong><br>Le document entier (toutes les pages du début à la fin) sera imprimé.</li><li><strong>Sélection</strong><br>Les objets sélectionnés dans le <em>panneau de configuration</em> (la multi-sélection fonctionne également) et leurs pages seront imprimés.</li><li><strong>Pages</strong><br>Ceci offre la possibilité d'imprimer par page définie. Entrez le numéro de page et/ou les plages de pages en séparant par des virgules et en utilisant « - » (exemple : 1,10,15-20,25, etc.).</li></ul></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:10.233%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_94807">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000335-f2a4ff2a50/200/warning (1)-70.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:89.767%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Le processus d'impression nécessite une ou plusieurs imprimantes associées selon les sections de la documentation actuelle. Si une section n'a pas d'imprimante définie ( Non définie <em>)</em> , vous pouvez en ajouter une en sélectionnant le nom de la section dans la liste des documents et en utilisant l' outil <em>Propriétés</em> ( option <em>Modifier ).</em><br></p></div>
+</div></div>
+</div></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:21.45%;margin-right:21.45%;" id="wnd_ImageBlock_26644">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:57.14%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000336-e3865e3866/200/3000.png?ph=dc6c71fcd5" alt="" width="200" height="114" data-original-width="588" data-original-height="336" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:8.686%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_48701">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000337-c381bc381c/200/light-40.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:91.314%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Si vous attribuez un programme de création de PDF à toutes les sections, vous pouvez enregistrer votre documentation sous forme de fichier <em>PDF</em> .&nbsp;<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1>Exporter au format .docx</h1><p>Il est possible d'exporter la documentation et tout résultat détaillé vers un fichier Office OpenXML (.docx).</p><p>Dans le module Documentation, cette fonctionnalité est accessible via le bouton «<em> Enregistrer sous .docx</em> » dans le coin inférieur droit du panneau de configuration.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:14.16%;margin-right:14.16%;" id="wnd_ImageBlock_10790">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:46.89%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000338-8016d8016e/200/4000.png?ph=dc6c71fcd5" alt="" width="200" height="94" data-original-width="804" data-original-height="377" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Pour exporter des données depuis la fenêtre de résultat détaillé, utilisez la commande <em>Fichier &gt; Exporter vers &gt; Exporter vers un document Office OpenXML (.docx)</em> ou directement la commande <em>Fichier &gt; Exporter vers un document Office OpenXML (.docx)</em> lorsqu'elle est disponible.</p><p>Dans les deux cas, la boîte de dialogue "Enregistrer en tant que document XML ouvert Office (docx)" apparaît, dans laquelle l'utilisateur peut décider ce qui suit :</p><ul><li>où enregistrer le fichier de résultat</li><li>quel fichier de modèle MS Office Word utiliser pour la convention (facultatif)</li><li>s'il faut marquer les sections de documentation dans les commentaires ou non (uniquement dans le module Documentation)</li></ul></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:11.143%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_2337">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000339-503995039a/200/warning (1)-76.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:88.857%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Les fichiers de modèle utilisés doivent être basés sur le fichier de modèle d'origine <em>My Documents\FEM-Design document templates\template for fem-design document templates.dotx, </em> car ce fichier contient le style requis pour l'exportation.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.18%;margin-right:13.18%;" id="wnd_ImageBlock_723">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:38.73%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000340-eb357eb358/200/6000.png?ph=dc6c71fcd5" alt="" width="200" height="77" data-original-width="772" data-original-height="299" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:9.687%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_2503">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000341-d88cad88cb/200/warning (1)-3.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:90.313%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>MS Office Word 2007 ou plus récent est requis pour ouvrir des fichiers avec la distribution .docx<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Il est fortement recommandé de marquer les sections de documentation dans le fichier exporté, car le rendu de la page dans MS Word et dans FEM-Design est différent. De plus, le document exporté a des pages au format A4. Par conséquent, s'il existe des pages dans la documentation FD avec des tailles différentes, il est plus facile de les trouver et de modifier leur taille dans le fichier de résultat .docx avec des marques de section.</p><p>L'utilisation de ses propres modèles Word est utile lorsque la documentation FD contient un cartouche, car il n'est pas possible de l'exporter vers .docx. Comme alternative, l'utilisateur peut créer un modèle Word avec des en-têtes et des pieds de page personnalisés et l'utiliser pour l'exportation.</p></div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:10.324%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_12836">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000342-4438f44390/200/warning (1)-72.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:89.676%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Étant donné que MS Word propose des solutions plus sophistiquées pour créer la table des matières, FEM-Design ne l'exporte pas vers le document .docx. Cependant, les chapitres sont exportés, donc la table des matières peut être créée facilement dans MS Word.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Un exemple de résultat détaillé exporté peut être vu dans la figure suivante :</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:13.66%;margin-right:13.66%;" id="wnd_ImageBlock_27853">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:65.47%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000343-ecbbcecbbd/200/7000.png?ph=dc6c71fcd5" alt="" width="200" height="131" data-original-width="782" data-original-height="512" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:6.684%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_92755">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:149.15%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000344-384a4384a5/200/light-60.png?ph=dc6c71fcd5" alt="" width="134" height="200" data-original-width="59" data-original-height="88" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:93.316%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Vous trouverez plus d'informations et des conseils utiles dans la FAQ Docx.&nbsp;<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><h1 id="wnd_TextBlock_54097_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_54097">Exporter vers Mathcad et vers XHTML</h1><p id="wnd_TextBlock_54097_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_54097">L'utilisateur peut exporter les résultats détaillés vers .xmcd (Mathcad 15) et vers .html (XHTML avec MathML). Ces opportunités sont accessibles dans le menu <em>Fichier &gt; Exporter vers de la fenêtre Résultat détaillé. </em>L'exportation .html est disponible pour les résultats détaillés de toutes les conceptions, tandis que le .xmcd est pour la conception en acier et en bois.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:17.11%;margin-right:17.11%;" id="wnd_ImageBlock_77909">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:93.65%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000345-7fe0f7fe10/200/8000.png?ph=dc6c71fcd5" alt="" width="200" height="187" data-original-width="677" data-original-height="634" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:9.414%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_57789">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000346-851f7851f8/200/warning (1)-67.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:90.586%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>Le fichier .html exporté ne peut être affiché correctement que dans les navigateurs Web prenant en charge MathML. Actuellement : Firefox 38 ou supérieur, Safari 8 et 9, iOS Safari 8.4 ou supérieur.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_60125_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_60125">Le résultat de l'exportation XHTML est un fichier .html et également un dossier contenant des éléments de la page html.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-portrait wnd-type-image img-s-n" style="margin-left:22.95%;margin-right:22.95%;" id="wnd_ImageBlock_51421">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:110.93%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000347-e1dfae1dfb/200/9000.png?ph=dc6c71fcd5" alt="" width="180" height="200" data-original-width="375" data-original-height="416" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_29946_inner_0" data-wnd_is_separable="1" data-wnd_separable_index="0" data-wnd_separable_id="wnd_TextBlock_29946">Le résultat de l'exportation vers Mathcad est un seul fichier .xmcd, entièrement modifiable dans Matchcad 15.</p></div>
+</div><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:23.27%;margin-right:23.27%;" id="wnd_ImageBlock_61712">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:96.27%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000348-71ac271ac3/200/0000-5.png?ph=dc6c71fcd5" alt="" width="200" height="193" data-original-width="483" data-original-height="465" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div><div class="column-wrapper cw cf">
+	<div class="cw-c cf"><div class="column-content c cf pr" style="width:8.595%;">
+	<div class="c-c cf"><div class="b-img b-img-default b b-s cf wnd-orientation-landscape wnd-type-image img-s-n" style="margin-left:0;margin-right:0;" id="wnd_ImageBlock_50421">
+	<div class="b-img-w">
+		<div class="b-img-c" style="padding-bottom:91.78%;text-align:center;">
+            <picture><img src="https://d6scj24zvfbbo.cloudfront.net/209290a9fdc116df551575e5bcd65206/200000349-5cc795cc7a/200/warning (1)-702.png?ph=dc6c71fcd5" alt="" width="200" height="184" data-original-width="73" data-original-height="67" style="top:0%;left:0%;width:100%;height:100%;position:absolute;" loading="lazy" ></picture>
+			<div class="b-img-embed">
+				</div>
+		</div>
+		<div class="b-img-t"></div>
+	</div>
+</div></div>
+</div><div class="column-content c cf pr" style="width:91.405%;">
+	<div class="c-c cf"><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p>La version Mathcad 15 M20 est requise pour ouvrir le fichier .xmcd.<br></p></div>
+</div></div>
+</div></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_29946_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_29946"><br></p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_60125_inner_1" data-wnd_is_separable="1" data-wnd_separable_index="1" data-wnd_separable_id="wnd_TextBlock_60125"><br></p></div>
+</div><div class="b b-text cf">
+	<div class="b-c b-text-c b-s b-s-t60 b-s-b60 b-cs cf"><p id="wnd_TextBlock_54097_inner_2" data-wnd_is_separable="1" data-wnd_separable_index="2" data-wnd_separable_id="wnd_TextBlock_54097"><br></p></div>
+</div></div>
+</div>
+			</div>
+		</div>
+	</div>
+</section></div>
+</div>
+			</main>
+
+			<footer class="l-f cf">
+				<div class="sw section-wrapper cf">
+	<div class="sw-c section-wrapper-content cf"><section data-wn-border-element="s-f-border" class="s s-f s-f-double s-f-simple sc-w   wnd-w-wider wnd-s-higher">
+	<div class="s-w">
+		<div class="s-o">
+			<div class="s-bg">
+				<div class="s-bg-l">
+                    
+					
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+			<div class="s-c s-f-l-w s-f-border">
+				<div class="s-f-l b-s b-s-t0 b-s-b0">
+					<div class="s-f-l-c s-f-l-c-first">
+						<div class="s-f-cr"><span class="it b inline-text link">
+	<span class="it-c">MARTIN Électricité</span>
+</span></div>
+						<div class="s-f-cr"><span class="it b inline-text link">
+	<span class="it-c">Tous droits réservés&nbsp;2022</span>
+</span></div>
+					</div>
+					<div class="s-f-l-c s-f-l-c-last">
+						<div class="s-f-sf"><span class="sf b">
+<span class="sf-content sf-c link">Optimisé par <a href="https://www.webnode.fr/?utm_source=text&amp;utm_medium=footer&amp;utm_campaign=free1&amp;utm_content=wnd2" rel="nofollow noopener" target="_blank">Webnode</a></span>
+</span></div>
+                        <div class="s-f-l-c-w">
+                            <div class="s-f-lang lang-select cf">
+	
+</div>
+                            <div class="s-f-ccy ccy-select cf">
+	
+</div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section></div>
+</div>
+			</footer>
+		</div>
+		<div class="wnd-free-stripe">
+    <a class="wnd-free-stripe-link" target="_blank" href="https://www.webnode.fr/?utm_source=text&amp;utm_medium=footer&amp;utm_content=wnd2_blue&amp;utm_campaign=signature" rel="noopener nofollow">
+        <span class="wnd-free-stripe-text">Créez votre site web gratuitement !</span>
+        <span class="wnd-free-stripe-logo">
+            <svg xmlns="https://www.w3.org/2000/svg" width="99" height="20" viewbox="0, 0, 99, 20">
+                <path d="M18.545 5.867L14.23 18.882h-1.885L9.373 9.166 6.4 18.882H4.514L.2 5.902h1.994l3.3 10.044L8.5 5.903h1.813l3.01 10.043 3.3-10.043h1.92v-.036zM57.52 10.4v8.482h-1.886v-8.447c0-1.233-.363-2.9-3.48-2.9-1.342 0-2.538.253-3.41.507v10.84H46.86V6.918c.617-.326 2.792-1.27 5.51-1.27 3.3 0 5.15 1.742 5.15 4.75zm14.5 1.957c0 5.547-3.334 6.707-6.126 6.707-2.792 0-6.09-1.16-6.09-6.707S63.1 5.65 65.893 5.65s6.127 1.16 6.127 6.707zm-1.848 0c0-3.48-1.27-5.004-4.242-5.004-2.936 0-4.205 1.523-4.205 5.004 0 3.48 1.27 5.003 4.205 5.003 2.937 0 4.242-1.523 4.242-5.003zM25.362 5.65c-5.91 0-5.693 5.51-5.693 6.888 0 5.402 3.226 6.526 5.945 6.526 1.85 0 3.37-.327 4.64-.907v-1.92c-1.087.65-2.537.978-4.46.978-2.682 0-4.277-1.088-4.277-4.677 0-3.843 1.305-5.112 3.843-5.112 3.59 0 3.808 3.77 3.808 4.387H23.62c0 .217-.036.47-.036.725 0 .326 0 .652.037.942h7.397s.036-.398.036-.906c.036-.507.218-6.925-5.692-6.925zm67.76 0c-5.91 0-5.692 5.51-5.692 6.888 0 5.402 3.226 6.526 5.945 6.526 1.85 0 3.372-.327 4.64-.907v-1.92c-1.087.65-2.537.978-4.458.978-2.683 0-4.278-1.088-4.278-4.677 0-3.843 1.304-5.112 3.842-5.112 3.59 0 3.806 3.77 3.806 4.387H91.38c0 .217-.035.47-.035.725 0 .326.036.652.036.942h7.397s.037-.398.037-.906c.036-.507.217-6.925-5.692-6.925zm-54.71 0c-.434 0-.906.036-1.34.108v1.777c.434-.073.87-.11 1.34-.11 2.865 0 4.098 1.415 4.098 4.823 0 4.64-2.212 5.148-3.843 5.148-2.285 0-3.445-.76-3.445-2.284V.936h-1.885v14.067c0 .98.363 4.097 5.293 4.097 2.14 0 5.73-.87 5.73-6.888 0-5.44-3.228-6.563-5.947-6.563zM83.297.9v14.176c0 1.522-1.16 2.284-3.444 2.284-1.63 0-3.843-.508-3.843-5.148 0-3.372 1.232-4.822 4.096-4.822.435 0 .906.036 1.34.108V5.722c-.434-.073-.87-.11-1.34-.11-2.72 0-5.946 1.16-5.946 6.563 0 5.982 3.59 6.89 5.728 6.89 4.93 0 5.294-3.155 5.294-4.098V.9h-1.886z" fill="#FFF"></path>
+            </svg>
+        </span>
+    </a>
+</div>
+
+	</div>
+
+	<section class="cb cb-dark" id="cookiebar" style="display:none;" id="cookiebar" style="display:none;">
+	<div class="cb-basic close cb-scrollable">
+		<div class="cb-basic-c">
+			<div class="cb-text">
+				<p>Ce site utilise des cookies pour permettre le bon fonctionnement, la sécurité, et vous offrir la meilleure expérience utilisateur possible.</p>
+			</div>
+			<div class="cb-buttons">
+				<button class="cb-button cb-close-basic" data-action="accept-necessary">
+					<span class="cb-button-content">N'acceptez que le nécessaire</span>
+				</button>
+				<button class="cb-button cb-close-basic" data-action="accept-all">
+					<span class="cb-button-content">Tout accepter</span>
+				</button>
+				<button class="cb-button cb-button-text cb-button-advanced">
+					<span class="cb-button-content"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="cb-advanced close">
+		<div class="cb-advanced-c">
+			<div class="cb-advanced-text">
+				<h3 class="cb-advanced-title">Paramètres avancés</h3>
+				<p>Vous pouvez personnaliser vos préférences en matière de cookies ici. Activez ou désactivez les catégories suivantes et enregistrez votre sélection.</p>
+			</div>
+			<div class="cb-advanced-options cb-scrollable">
+				<div class="cb-advanced-option">
+					<label class="cb-advanced-option-label" for="necessary">Cookies essentiels</label>
+					<input type="checkbox" id="necessary" name="necessary" readonly="readonly" disabled="disabled" checked="checked">
+					<div class="cb-advanced-checkbox"></div>
+					<div class="cb-advanced-option-text"></div>
+				</div>
+			</div>
+			<div>
+				<button class="cb-button cb-save-advanced" data-action="advanced-save">
+					<span class="cb-button-content">Enregistrer</span>
+				</button>
+			</div>
+			<a href="#" rel="nofollow" class="cb-close cb-close-advanced" data-action="close"></a>
+		</div>
+	</div>
+</section>
+
+	
+<script>!function(){if(0==document.getElementsByClassName("wnd-cms").length)for(var e=document.getElementsByClassName("column-content"),s=0;s<e.length;s++){var t=e[s].querySelector("div"),l=t.getElementsByClassName("b-text-c");void 0!=l[0]&&t.firstChild==t.lastChild&&""===l[0].innerText&&(e[s].classList?e[s].classList.add("column-empty"):(e[s].classList?e[s].classList.contains("column-empty"):new RegExp("\\bcolumn-empty\\b").test(e[s].className))&&(e[s].className+=" column-empty"))}}()</script>
+	<script type="module" src="https://d1di2lzuh97fh2.cloudfront.net/files/1z/1zk/1zk6ra.js?ph=dc6c71fcd5"></script>
+
+<script src="https://d1di2lzuh97fh2.cloudfront.net/client.fe/js.compiled/lang.fr.804.js?ph=dc6c71fcd5" crossorigin="anonymous"></script><script src="https://d1di2lzuh97fh2.cloudfront.net/client.fe/js.compiled/compiled.multi.2-1260.js?ph=dc6c71fcd5" crossorigin="anonymous"></script><script>var wnd = wnd || {};wnd.$data = {"image_content_items":{"wnd_ThumbnailBlock_1":{"id":"wnd_ThumbnailBlock_1","type":"wnd.pc.ThumbnailBlock"},"wnd_HeaderSection_header_main_214180240":{"id":"wnd_HeaderSection_header_main_214180240","type":"wnd.pc.HeaderSection"},"wnd_ImageBlock_392988934":{"id":"wnd_ImageBlock_392988934","type":"wnd.pc.ImageBlock"},"wnd_Section_default_141420378":{"id":"wnd_Section_default_141420378","type":"wnd.pc.Section"},"wnd_ImageBlock_57258":{"id":"wnd_ImageBlock_57258","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_1247":{"id":"wnd_ImageBlock_1247","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_65395":{"id":"wnd_ImageBlock_65395","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_98574":{"id":"wnd_ImageBlock_98574","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_66165":{"id":"wnd_ImageBlock_66165","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_55928":{"id":"wnd_ImageBlock_55928","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32871":{"id":"wnd_ImageBlock_32871","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_16351":{"id":"wnd_ImageBlock_16351","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_36249":{"id":"wnd_ImageBlock_36249","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_74426":{"id":"wnd_ImageBlock_74426","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_21642":{"id":"wnd_ImageBlock_21642","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_91793":{"id":"wnd_ImageBlock_91793","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_4683":{"id":"wnd_ImageBlock_4683","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_38843":{"id":"wnd_ImageBlock_38843","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_51307":{"id":"wnd_ImageBlock_51307","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32692":{"id":"wnd_ImageBlock_32692","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_80670":{"id":"wnd_ImageBlock_80670","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12012":{"id":"wnd_ImageBlock_12012","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_90276":{"id":"wnd_ImageBlock_90276","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_75134":{"id":"wnd_ImageBlock_75134","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_68968":{"id":"wnd_ImageBlock_68968","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_97154":{"id":"wnd_ImageBlock_97154","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_59069":{"id":"wnd_ImageBlock_59069","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_96251":{"id":"wnd_ImageBlock_96251","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_9826":{"id":"wnd_ImageBlock_9826","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_52811":{"id":"wnd_ImageBlock_52811","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_605":{"id":"wnd_ImageBlock_605","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_91778":{"id":"wnd_ImageBlock_91778","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_97684":{"id":"wnd_ImageBlock_97684","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12623":{"id":"wnd_ImageBlock_12623","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_88430":{"id":"wnd_ImageBlock_88430","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50031":{"id":"wnd_ImageBlock_50031","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_38765":{"id":"wnd_ImageBlock_38765","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_45419":{"id":"wnd_ImageBlock_45419","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69706":{"id":"wnd_ImageBlock_69706","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_57398":{"id":"wnd_ImageBlock_57398","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_96618":{"id":"wnd_ImageBlock_96618","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_84296":{"id":"wnd_ImageBlock_84296","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_87103":{"id":"wnd_ImageBlock_87103","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_67885":{"id":"wnd_ImageBlock_67885","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69447":{"id":"wnd_ImageBlock_69447","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_5403":{"id":"wnd_ImageBlock_5403","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_58125":{"id":"wnd_ImageBlock_58125","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_232":{"id":"wnd_ImageBlock_232","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32477":{"id":"wnd_ImageBlock_32477","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_79976":{"id":"wnd_ImageBlock_79976","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69335":{"id":"wnd_ImageBlock_69335","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_4607":{"id":"wnd_ImageBlock_4607","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_56310":{"id":"wnd_ImageBlock_56310","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50779":{"id":"wnd_ImageBlock_50779","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_7190":{"id":"wnd_ImageBlock_7190","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_48150":{"id":"wnd_ImageBlock_48150","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_94807":{"id":"wnd_ImageBlock_94807","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_26644":{"id":"wnd_ImageBlock_26644","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_48701":{"id":"wnd_ImageBlock_48701","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_10790":{"id":"wnd_ImageBlock_10790","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_2337":{"id":"wnd_ImageBlock_2337","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_723":{"id":"wnd_ImageBlock_723","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_2503":{"id":"wnd_ImageBlock_2503","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12836":{"id":"wnd_ImageBlock_12836","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_27853":{"id":"wnd_ImageBlock_27853","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_92755":{"id":"wnd_ImageBlock_92755","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_77909":{"id":"wnd_ImageBlock_77909","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_57789":{"id":"wnd_ImageBlock_57789","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_51421":{"id":"wnd_ImageBlock_51421","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_61712":{"id":"wnd_ImageBlock_61712","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50421":{"id":"wnd_ImageBlock_50421","type":"wnd.pc.ImageBlock"},"wnd_LogoBlock_464134142":{"id":"wnd_LogoBlock_464134142","type":"wnd.pc.LogoBlock"},"wnd_FooterSection_footer_15893968":{"id":"wnd_FooterSection_footer_15893968","type":"wnd.pc.FooterSection"}},"svg_content_items":{"wnd_ImageBlock_392988934":{"id":"wnd_ImageBlock_392988934","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_57258":{"id":"wnd_ImageBlock_57258","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_1247":{"id":"wnd_ImageBlock_1247","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_65395":{"id":"wnd_ImageBlock_65395","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_98574":{"id":"wnd_ImageBlock_98574","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_66165":{"id":"wnd_ImageBlock_66165","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_55928":{"id":"wnd_ImageBlock_55928","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32871":{"id":"wnd_ImageBlock_32871","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_16351":{"id":"wnd_ImageBlock_16351","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_36249":{"id":"wnd_ImageBlock_36249","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_74426":{"id":"wnd_ImageBlock_74426","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_21642":{"id":"wnd_ImageBlock_21642","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_91793":{"id":"wnd_ImageBlock_91793","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_4683":{"id":"wnd_ImageBlock_4683","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_38843":{"id":"wnd_ImageBlock_38843","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_51307":{"id":"wnd_ImageBlock_51307","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32692":{"id":"wnd_ImageBlock_32692","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_80670":{"id":"wnd_ImageBlock_80670","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12012":{"id":"wnd_ImageBlock_12012","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_90276":{"id":"wnd_ImageBlock_90276","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_75134":{"id":"wnd_ImageBlock_75134","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_68968":{"id":"wnd_ImageBlock_68968","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_97154":{"id":"wnd_ImageBlock_97154","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_59069":{"id":"wnd_ImageBlock_59069","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_96251":{"id":"wnd_ImageBlock_96251","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_9826":{"id":"wnd_ImageBlock_9826","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_52811":{"id":"wnd_ImageBlock_52811","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_605":{"id":"wnd_ImageBlock_605","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_91778":{"id":"wnd_ImageBlock_91778","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_97684":{"id":"wnd_ImageBlock_97684","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12623":{"id":"wnd_ImageBlock_12623","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_88430":{"id":"wnd_ImageBlock_88430","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50031":{"id":"wnd_ImageBlock_50031","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_38765":{"id":"wnd_ImageBlock_38765","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_45419":{"id":"wnd_ImageBlock_45419","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69706":{"id":"wnd_ImageBlock_69706","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_57398":{"id":"wnd_ImageBlock_57398","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_96618":{"id":"wnd_ImageBlock_96618","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_84296":{"id":"wnd_ImageBlock_84296","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_87103":{"id":"wnd_ImageBlock_87103","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_67885":{"id":"wnd_ImageBlock_67885","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69447":{"id":"wnd_ImageBlock_69447","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_5403":{"id":"wnd_ImageBlock_5403","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_58125":{"id":"wnd_ImageBlock_58125","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_232":{"id":"wnd_ImageBlock_232","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_32477":{"id":"wnd_ImageBlock_32477","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_79976":{"id":"wnd_ImageBlock_79976","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_69335":{"id":"wnd_ImageBlock_69335","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_4607":{"id":"wnd_ImageBlock_4607","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_56310":{"id":"wnd_ImageBlock_56310","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50779":{"id":"wnd_ImageBlock_50779","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_7190":{"id":"wnd_ImageBlock_7190","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_48150":{"id":"wnd_ImageBlock_48150","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_94807":{"id":"wnd_ImageBlock_94807","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_26644":{"id":"wnd_ImageBlock_26644","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_48701":{"id":"wnd_ImageBlock_48701","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_10790":{"id":"wnd_ImageBlock_10790","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_2337":{"id":"wnd_ImageBlock_2337","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_723":{"id":"wnd_ImageBlock_723","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_2503":{"id":"wnd_ImageBlock_2503","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_12836":{"id":"wnd_ImageBlock_12836","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_27853":{"id":"wnd_ImageBlock_27853","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_92755":{"id":"wnd_ImageBlock_92755","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_77909":{"id":"wnd_ImageBlock_77909","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_57789":{"id":"wnd_ImageBlock_57789","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_51421":{"id":"wnd_ImageBlock_51421","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_61712":{"id":"wnd_ImageBlock_61712","type":"wnd.pc.ImageBlock"},"wnd_ImageBlock_50421":{"id":"wnd_ImageBlock_50421","type":"wnd.pc.ImageBlock"},"wnd_LogoBlock_464134142":{"id":"wnd_LogoBlock_464134142","type":"wnd.pc.LogoBlock"}},"content_items":[],"project_info":{"isMultilanguage":false,"isMulticurrency":false,"eshop_tax_enabled":"1","country_code":"","contact_state":"","eshop_tax_type":"VAT","eshop_discounts":false}};</script><script>wnd.$system = {"fileSystemType":"aws_s3","localFilesPath":"https:\/\/fem-desing.webnode.fr\/_files\/","awsS3FilesPath":"https:\/\/d6scj24zvfbbo.cloudfront.net\/209290a9fdc116df551575e5bcd65206\/","staticFiles":"https:\/\/d1di2lzuh97fh2.cloudfront.net\/files","isCms":false,"staticCDNServers":["https:\/\/d1di2lzuh97fh2.cloudfront.net\/"],"fileUploadAllowExtension":["jpg","jpeg","jfif","png","gif","bmp","ico","svg","webp","tiff","pdf","doc","docx","ppt","pptx","pps","ppsx","odt","xls","xlsx","txt","rtf","mp3","wma","wav","ogg","amr","flac","m4a","3gp","avi","wmv","mov","mpg","mkv","mp4","mpeg","m4v","swf","gpx","stl","csv","xml","txt","dxf","dwg","iges","igs","step","stp"],"maxUserFormFileLimit":4194304,"frontendLanguage":"fr","backendLanguage":"fr","frontendLanguageId":"1","page":{"id":200000061,"identifier":"documentation","template":{"id":200000002,"styles":{"typography":"t-09","scheme":"cs-gray-3","additiveColor":"ac-dblue","acHeadings":true,"acSubheadings":false,"acIcons":true,"acOthers":true,"acMenu":false,"imageStyle":"img-d-n","imageHover":"img-h-n","imageTitle":"img-t-u","buttonStyle":"b-btn-sq","buttonSize":"b-btn-s-m","buttonDecoration":"b-btn-dn","buttonBorders":"b-btn-bw-1","lineStyle":"line-solid","eshopGridItemStyle":"b-e-ds","formStyle":"default","menuType":"","menuStyle":"menu-default","lightboxStyle":"lbox-d","columnSpaces":"c-s-m","sectionWidth":"wnd-w-default","sectionSpace":"wnd-s-normal","layoutType":"l-default","layoutDecoration":"l-d-border","background":{"default":null},"backgroundSettings":{"default":""},"buttonWeight":"t-btn-fw-l","productWeight":"t-pd-fw-l","menuWeight":"t-nav-fw-l","headerBarStyle":""}},"layout":"default","name":"Documentation","html_title":"","language":"fr","langId":1,"isHomepage":false,"meta_description":null,"meta_keywords":null,"header_code":null,"footer_code":null,"styles":{"pageBased":{"navline":{"style":{"sectionWidth":"wnd-w-wider","sectionHeight":"wnd-nh-m","sectionPosition":"wnd-na-c"}}}},"countFormsEntries":[]},"listingsPrefix":"\/l\/","productPrefix":"\/p\/","cartPrefix":"\/cart\/","checkoutPrefix":"\/checkout\/","searchPrefix":"\/search\/","isCheckout":false,"isEshop":false,"isProductDetail":false,"isListingDetail":false,"listing_page":[],"hasEshopAnalytics":false,"gTagId":null,"gAdsId":null,"format":{"be":{"DATE_TIME":{"mask":"%d\/%m\/%Y %H:%M","regexp":"^(((0?[1-9]|[1,2][0-9]|3[0,1])\\\/(0?[1-9]|1[0-2])\\\/[0-9]{1,4})(( [0-1][0-9]| 2[0-3]):[0-5][0-9])?|(([0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[1,2][0-9]|3[0,1])(0[0-9]|1[0-9]|2[0-3])[0-5][0-9][0-5][0-9])))?$"},"DATE":{"mask":"%d\/%m\/%Y","regexp":"^((0?[1-9]|[1,2][0-9]|3[0,1])\\\/(0?[1-9]|1[0-2])\\\/[0-9]{1,4})$"},"CURRENCY":{"mask":{"point":",","thousands":" ","decimals":2,"mask":"%s","zerofill":true}}},"fe":{"DATE_TIME":{"mask":"%d\/%m\/%Y %H:%M","regexp":"^(((0?[1-9]|[1,2][0-9]|3[0,1])\\\/(0?[1-9]|1[0-2])\\\/[0-9]{1,4})(( [0-1][0-9]| 2[0-3]):[0-5][0-9])?|(([0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[1,2][0-9]|3[0,1])(0[0-9]|1[0-9]|2[0-3])[0-5][0-9][0-5][0-9])))?$"},"DATE":{"mask":"%d\/%m\/%Y","regexp":"^((0?[1-9]|[1,2][0-9]|3[0,1])\\\/(0?[1-9]|1[0-2])\\\/[0-9]{1,4})$"},"CURRENCY":{"mask":{"point":",","thousands":" ","decimals":2,"mask":"%s","zerofill":true}}}},"e_product":null,"listing_item":null,"feReleasedFeatures":{"projectCookieBarTemplate":true,"projectFreeBarFixed":true,"projectFreeBarFixedTop":false,"projectFreeBarFixedTopButton":false,"projectFreeBarFixedTopButtonDark":false,"projectFreeBarAltText":false},"labels":{"invoicesGenerator.W2EshopInvoice.alreadyPayed":"Ne payez pas ! - D\u00e9j\u00e0 pay\u00e9","invoicesGenerator.W2EshopInvoice.amount":"Quantit\u00e9:","invoicesGenerator.W2EshopInvoice.contactInfo":"Informations de contact :","invoicesGenerator.W2EshopInvoice.couponCode":"Code coupon :","invoicesGenerator.W2EshopInvoice.customer":"Client :","invoicesGenerator.W2EshopInvoice.dateOfIssue":"Date d'\u00e9mission :","invoicesGenerator.W2EshopInvoice.dateOfTaxableSupply":"Date de la livraison taxable :","invoicesGenerator.W2EshopInvoice.dic":"Num\u00e9ro de TVA","invoicesGenerator.W2EshopInvoice.discount":"R\u00e9duction","invoicesGenerator.W2EshopInvoice.dueDate":"Date d'\u00e9ch\u00e9ance :","invoicesGenerator.W2EshopInvoice.email":"Email:","invoicesGenerator.W2EshopInvoice.filenamePrefix":"Facture-","invoicesGenerator.W2EshopInvoice.fiscalCode":"Code fiscal :","invoicesGenerator.W2EshopInvoice.freeShipping":"Livraison gratuite","invoicesGenerator.W2EshopInvoice.ic":"ID de la soci\u00e9t\u00e9 :","invoicesGenerator.W2EshopInvoice.invoiceNo":"Num\u00e9ro de facture","invoicesGenerator.W2EshopInvoice.invoiceNoTaxed":"Facture - Num\u00e9ro de la facture fiscale","invoicesGenerator.W2EshopInvoice.notVatPayers":"Non enregistr\u00e9 \u00e0 la TVA","invoicesGenerator.W2EshopInvoice.orderNo":"Num\u00e9ro de commande","invoicesGenerator.W2EshopInvoice.paymentPrice":"Prix du moyen de paiement :","invoicesGenerator.W2EshopInvoice.pec":"PEC:","invoicesGenerator.W2EshopInvoice.phone":"Num\u00e9ro de t\u00e9l\u00e9phone :","invoicesGenerator.W2EshopInvoice.priceExTax":"Prix hors taxe :","invoicesGenerator.W2EshopInvoice.priceIncludingTax":"Prix TTC :","invoicesGenerator.W2EshopInvoice.product":"Produit :","invoicesGenerator.W2EshopInvoice.productNr":"Num\u00e9ro de produit :","invoicesGenerator.W2EshopInvoice.recipientCode":"Code destinataire :","invoicesGenerator.W2EshopInvoice.shippingAddress":"Adresse de livraison:","invoicesGenerator.W2EshopInvoice.shippingPrice":"Prix d'exp\u00e9dition :","invoicesGenerator.W2EshopInvoice.subtotal":"Sous-total :","invoicesGenerator.W2EshopInvoice.sum":"Total:","invoicesGenerator.W2EshopInvoice.supplier":"Fournisseur:","invoicesGenerator.W2EshopInvoice.tax":"Taxe:","invoicesGenerator.W2EshopInvoice.total":"Total:","invoicesGenerator.W2EshopInvoice.web":"Internet:","wnd.es.CheckoutShippingService.correiosDeliveryWithSpecialConditions":"Le code postal de destination est soumis \u00e0 des conditions de livraison sp\u00e9ciales par ECT et sera effectu\u00e9 avec l'ajout d'un maximum de 7 (sept) jours ouvrables \u00e0 la p\u00e9riode normale.","wnd.es.CheckoutShippingService.correiosWithoutHomeDelivery":"Le code postal de destination est temporairement sans livraison \u00e0 domicile. La livraison sera effectu\u00e9e \u00e0 l'agence indiqu\u00e9e dans l'avis d'arriv\u00e9e qui sera livr\u00e9 \u00e0 l'adresse du destinataire","wnd.fe.CheckoutSelectMethodZasilkovnaItem.change":"Change pick up point","wnd.fe.CheckoutSelectMethodZasilkovnaItem.choose":"Choose your pick up point","wnd.fe.CheckoutSelectMethodZasilkovnaItem.error":"Please select a pick up point","wnd.fe.CheckoutZipField.brInvalid":"Veuillez saisir un code postal valide au format XXXXX","wnd.fe.CookieBar.message":"Ce site web utilise des \u00ab cookies \u00bb afin d'optimiser l'acc\u00e8s et am\u00e9liorer votre exp\u00e9rience sur notre site. En utilisant votre navigation sur ce site, vous acceptez des cookies.","wnd.fe.FeFooter.createWebsite":"Cr\u00e9ez votre site web gratuitement !","wnd.fe.FormManager.error.file.notAllowedExtension":"Le type de fichier \u0022{EXTENSION}\u0022 n'est pas autoris\u00e9.","wnd.fe.FormManager.error.file.required":"S\u00e9lectionnez un fichier.","wnd.fe.FormManager.error.file.sizeExceeded":"La taille limite des fichiers \u00e0 envoyer est de {SIZE} Mo.","wnd.fe.FormManager.error.userChangePassword":"Les mots de passe ne correspondent pas","wnd.fe.FormManager.error.userLogin.inactiveAccount":"Votre inscription n'est pas encore confirm\u00e9e, vous ne pouvez pas vous connecter.","wnd.fe.FormManager.error.userLogin.invalidLogin":"Le nom d'utilisateur ou le mot de passe est incorrect !","wnd.fe.FreeBarBlock.buttonText":"Commencer","wnd.fe.FreeBarBlock.longText":"This website was created with Webnode.com. \u003Cstrong\u003ECreate your own\u003C\/strong\u003E today for free!","wnd.fe.ListingData.shortMonthName.Apr":"avr.","wnd.fe.ListingData.shortMonthName.Aug":"ao\u00fbt","wnd.fe.ListingData.shortMonthName.Dec":"d\u00e9c.","wnd.fe.ListingData.shortMonthName.Feb":"f\u00e9vr.","wnd.fe.ListingData.shortMonthName.Jan":"janv.","wnd.fe.ListingData.shortMonthName.Jul":"juill.","wnd.fe.ListingData.shortMonthName.Jun":"juin","wnd.fe.ListingData.shortMonthName.Mar":"mars","wnd.fe.ListingData.shortMonthName.May":"mai","wnd.fe.ListingData.shortMonthName.Nov":"nov.","wnd.fe.ListingData.shortMonthName.Oct":"oct.","wnd.fe.ListingData.shortMonthName.Sep":"sept.","wnd.fe.ShoppingCartManager.count.between2And4":"{COUNT} articles","wnd.fe.ShoppingCartManager.count.moreThan5":"{COUNT} articles","wnd.fe.ShoppingCartManager.count.one":"{COUNT} article","wnd.fe.ShoppingCartTable.label.itemsInStock":"Only {COUNT} pcs available in stock","wnd.fe.ShoppingCartTable.label.itemsInStock.between2And4":"Seulement {COUNT} pi\u00e8ces disponibles en stock","wnd.fe.ShoppingCartTable.label.itemsInStock.moreThan5":"Seulement {COUNT} pi\u00e8ces disponibles en stock","wnd.fe.ShoppingCartTable.label.itemsInStock.one":"Seulement {COUNT} pi\u00e8ce disponible en stock","wnd.fe.ShoppingCartTable.label.outOfStock":"\u00c9puis\u00e9","wnd.fe.UserBar.logOut":"Se d\u00e9connecter","wnd.pc.BlogDetailPageZone.next":"Articles r\u00e9cents","wnd.pc.BlogDetailPageZone.previous":"Anciens articles","wnd.pc.CookieBar.button.advancedClose":"Fermer","wnd.pc.CookieBar.button.advancedOpen":"Ouvrir les param\u00e8tres avanc\u00e9s","wnd.pc.CookieBar.button.advancedSave":"Enregistrer","wnd.pc.CookieBar.link.disclosure":"Disclosure","wnd.pc.CookieBar.title.advanced":"Param\u00e8tres avanc\u00e9s","wnd.pc.CookieBar.title.option.functional":"Cookies fonctionnels","wnd.pc.CookieBar.title.option.marketing":"Cookies Tiers \/ Marketing","wnd.pc.CookieBar.title.option.necessary":"Cookies essentiels","wnd.pc.CookieBar.title.option.performance":"Cookies de performance","wnd.pc.FileBlock.download":"T\u00c9L\u00c9CHARGER","wnd.pc.FormBlock.action.defaultMessage.text":"Le formulaire a \u00e9t\u00e9 correctement envoy\u00e9.","wnd.pc.FormBlock.action.defaultMessage.title":"Merci !","wnd.pc.FreeBarBlock.text":"Optimis\u00e9 par","wnd.pc.ListingDetailPageZone.next":"Suivant","wnd.pc.ListingDetailPageZone.previous":"Pr\u00e9c\u00e9dent","wnd.pc.ListingItemCopy.namePrefix":"Copie de","wnd.pc.Option.defaultText":"Nouvelle option","wnd.pc.PageCopy.namePrefix":"Copie de","wnd.pc.ProductAddToCartBlock.addToCart":"Ajouter au panier","wnd.pc.ProductItem.button.viewDetail":"Page produit","wnd.pc.ProductOptionGroupBlock.notSelected":"Aucune variante n'a \u00e9t\u00e9 s\u00e9lectionn\u00e9e","wnd.pc.ProductOutOfStockBlock.label":"\u00c9puis\u00e9","wnd.pc.ProductPriceBlock.prefixText":"\u00c0 partir de ","wnd.pc.ProductPriceBlock.suffixText":"","wnd.pc.ProductsZone.label.collections":"Cat\u00e9gories","wnd.pc.ProductsZoneModel.label.allCollections":"Tous les produits","wnd.pc.SearchBlock.allResults":"Afficher tous les r\u00e9sultats","wnd.pc.SearchBlock.iconText":"Rechercher","wnd.pc.SearchBlock.inputPlaceholder":"Recherche de produit...","wnd.pc.SearchResultsZone.emptyResult":"Il n'y a aucun produit correspondant \u00e0 votre recherche. Veuillez essayer d'utiliser une autre expression.","wnd.pc.SearchResultsZone.foundProducts":"Produits trouv\u00e9s :","wnd.pc.SearchResultsZone.productsTitle":"Produits","wnd.pc.SearchResultsZone.title":"R\u00e9sultats de recherche pour :","wnd.pc.ShoppingCartTable.label.checkout":"Passer commande","wnd.pc.ShoppingCartTable.label.checkoutDisabled":"La page de paiement n'est actuellement pas disponible (pas de moyen de paiement et de livraison)","wnd.pc.ShoppingCartTable.label.continue":"Continuer mes achats","wnd.pc.ShoppingCartTable.label.delete":"Supprimer","wnd.pc.ShoppingCartTable.label.item":"Produit","wnd.pc.ShoppingCartTable.label.price":"Prix","wnd.pc.ShoppingCartTable.label.quantity":"Quantit\u00e9","wnd.pc.ShoppingCartTable.label.sum":"Total","wnd.pc.ShoppingCartTable.label.totalPrice":"Total","wnd.pc.ShoppingCartTable.placeholder.text":"Vous pouvez le changer. Choisissez dans notre vaste offre de produits !","wnd.pc.ShoppingCartTable.placeholder.title":"Votre panier est vide.","wnd.pc.SystemFooterBlock.poweredByWebnode":"Optimis\u00e9 par {START_LINK}Webnode{END_LINK}","wnd.pc.UserBar.logoutText":"Se d\u00e9connecter","wnd.pc.UserChangePasswordFormBlock.invalidRecoveryUrl":"Le lien pour r\u00e9initialiser votre mot de passe a expir\u00e9. Pour recevoir un nouveau lien, ouvrez la page{START_LINK}Mot de passe oubli\u00e9{END_LINK}","wnd.pc.UserRecoveryFormBlock.action.defaultMessage.text":"Le lien de r\u00e9initialisation de votre mot de passe vient de vous \u00eatre envoy\u00e9 par email. Si vous ne l'avez pas re\u00e7u, consultez votre dossier courrier ind\u00e9sirable.","wnd.pc.UserRecoveryFormBlock.action.defaultMessage.title":"Un e-mail vient de vous \u00eatre envoy\u00e9 avec des instructions","wnd.pc.UserRegistrationFormBlock.action.defaultMessage.text":"Votre inscription est en attente d'approbation. Une fois l'inscription approuv\u00e9e, vous recevrez un e-mail de confirmation.","wnd.pc.UserRegistrationFormBlock.action.defaultMessage.title":"Merci pour votre inscription sur notre site.","wnd.pm.AddNewPagePattern.onlineStore":"Boutique en ligne","wnd.ps.CookieBarSettingsForm.default.advancedMainText":"Vous pouvez personnaliser vos pr\u00e9f\u00e9rences en mati\u00e8re de cookies ici. Activez ou d\u00e9sactivez les cat\u00e9gories suivantes et enregistrez votre s\u00e9lection.","wnd.ps.CookieBarSettingsForm.default.captionAcceptAll":"Tout accepter","wnd.ps.CookieBarSettingsForm.default.captionAcceptNecessary":"N'acceptez que le n\u00e9cessaire","wnd.ps.CookieBarSettingsForm.default.mainText":"Ce site utilise des cookies pour permettre le bon fonctionnement, la s\u00e9curit\u00e9, et vous offrir la meilleure exp\u00e9rience utilisateur possible."}};</script><script>
+				(function() {
+					function sendToGoogleAnalytics({name, delta, id})
+					{
+						if (typeof(window.gtag) == "function")
+						{
+							window.gtag("event", name, {
+								event_category: "Web Vitals",
+								// The `id` value will be unique to the current page load. When sending
+								// multiple values from the same page (e.g. for CLS), Google Analytics can
+								// compute a total by grouping on this ID (note: requires `eventLabel` to
+								// be a dimension in your report).
+								event_label: id,
+								// Google Analytics metrics must be integers, so the value is rounded.
+								// For CLS the value is first multiplied by 1000 for greater precision
+								// (note: increase the multiplier for greater precision if needed).
+								value: Math.round(name === "CLS" ? delta * 1000 : delta),
+								// Use a non-interaction event to avoid affecting bounce rate.
+								non_interaction: true,
+							
+								// OPTIONAL: any additional params or debug info here.
+								// See: https://web.dev/debug-web-vitals-in-the-field/
+								// metric_rating: "good" | "ni" | "poor",
+								// debug_info: "...",
+								// ...
+					  		});
+						}
+					}
+
+					var script = document.createElement("script");
+					script.src = "https://unpkg.com/web-vitals/dist/web-vitals.base.iife.js";
+					script.onload = function() {
+						webVitals.getCLS(sendToGoogleAnalytics);
+						webVitals.getFID(sendToGoogleAnalytics);
+						webVitals.getLCP(sendToGoogleAnalytics);
+						webVitals.getFCP(sendToGoogleAnalytics);
+						webVitals.getTTFB(sendToGoogleAnalytics);
+					}
+					document.head.appendChild(script);
+				}())
+			</script></body>
+
+<!-- Mirrored from fem-desing.webnode.fr/documentation/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Apr 2022 02:15:10 GMT -->
+</html>

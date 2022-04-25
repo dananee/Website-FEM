@@ -1,0 +1,12 @@
+HTTrack3.49-2 launched on Mon, 25 Apr 2022 01:47:40 at https://fem-desing.webnode.fr/concepts-de-base-fem-design/
+(winhttrack https://fem-desing.webnode.fr/concepts-de-base-fem-design/ -O "//home/golenskull/websites/website-g/concept-de-base-fem-design" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:47:44	Warning: 	Link https://fem-desing.webnode.fr/concepts-de-base-fem-design/ not scanned (follow robots meta tag)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 seconds : 2 links scanned, 1 files written (220253 bytes overall) [48921 bytes received at 12230 bytes/sec], 220253 bytes transferred using HTTP compression in 1 files, ratio 21%
+(No errors, 1 warnings, 0 messages)

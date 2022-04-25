@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+02:26:09	44980/44980	---MCZ	200	added ('OK')	text/html	date:Sun,%2017%20Apr%202022%2002:26:08%20GMT	https://fem-desing.webnode.fr/services/	/home/golenskull/websites/services/fem-desing.webnode.fr/services/index.html	(from )
+02:26:11	127/127	---M--	200	added ('OK')	text/plain	date:Sat,%2016%20Apr%202022%2015:54:53%20GMT	https://fem-desing.webnode.fr/robots.txt		(from )

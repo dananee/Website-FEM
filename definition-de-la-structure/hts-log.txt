@@ -1,0 +1,12 @@
+HTTrack3.49-2 launched on Mon, 25 Apr 2022 01:56:37 at https://fem-desing.webnode.fr/definition-de-la-structure/
+(winhttrack https://fem-desing.webnode.fr/definition-de-la-structure/ -O "/home/golenskull/websites/website-g/definition-de-la-structure" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:56:40	Warning: 	Link https://fem-desing.webnode.fr/definition-de-la-structure/ not scanned (follow robots meta tag)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 seconds : 2 links scanned, 1 files written (95248 bytes overall) [24361 bytes received at 8120 bytes/sec], 95369 bytes transferred using HTTP compression in 2 files, ratio 24%
+(No errors, 1 warnings, 0 messages)

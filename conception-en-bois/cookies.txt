@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+fem-desing.webnode.fr	TRUE	/	FALSE	1999999999	PHPSESSID	8ae758982fd985d6fcecc7950f5bc66c
+
